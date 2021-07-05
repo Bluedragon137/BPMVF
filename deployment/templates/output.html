@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>Model Output</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</header>
+
+<body>
+    <div class="container">
+        {% block content %}
+        {{input|safe}}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
