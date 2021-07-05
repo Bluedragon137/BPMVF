@@ -33,9 +33,9 @@ def gen_graph(sA, sC, sG, sT, entry, startpos, trim_start, trim_end, chrom, ispr
     plt.bar(ind, sG, color = '#D69824')
     plt.bar(ind, sT, color = '#D40603')
     if isprofile:
-        plt.savefig('static/images/profileimp' + str(entry) + '.png')
+        plt.savefig('static/images/profileimp1' + str(entry) + '.png')
     else:
-        plt.savefig('static/images/countsimp' + str(entry) + '.png')
+        plt.savefig('static/images/countsimp1' + str(entry) + '.png')
 
 def vis_shap(counts_hdf5, profile_hdf5, entry):
     c_chrom, c_start, c_end, c_scores, c_seqs, p_chrom, p_start, p_end, p_scores, p_seqs = load_hdf5(counts_hdf5, profile_hdf5)

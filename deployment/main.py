@@ -21,7 +21,7 @@ def home():
         position = request.form['position']
         allele1 = request.form['allele1']
         allele2 = request.form['allele2']
-        #model_output = generate_output(model, graph,  cell_type, chromosome, position, allele1, allele2)
+        generate_output(cell_type, chromosome, position, allele1, allele2)
         #return render_template('output.html', input = model_output)
     return render_template('index.html', form=form)
 
