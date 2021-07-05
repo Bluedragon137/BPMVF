@@ -1,0 +1,22 @@
+INFO:2021-06-29 16:53:41,207:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-06-29 16:54:19,105:[metrics.py:465 -        metrics_main() ] 		min		max		median
+INFO:2021-06-29 16:54:19,107:[metrics.py:468 -        metrics_main() ] mnll		0.035		0.816		0.204
+INFO:2021-06-29 16:54:19,108:[metrics.py:470 -        metrics_main() ] cross_entropy	5.121		8.902		6.062
+INFO:2021-06-29 16:54:19,109:[metrics.py:472 -        metrics_main() ] jsd		0.273		0.827		0.654
+INFO:2021-06-29 16:54:19,110:[metrics.py:474 -        metrics_main() ] pearson		-0.153		0.900		0.421
+INFO:2021-06-29 16:54:19,111:[metrics.py:476 -        metrics_main() ] spearman	-0.148		0.741		0.283
+INFO:2021-06-29 16:54:19,112:[metrics.py:478 -        metrics_main() ] mse		0.007		3.929		0.066
+INFO:2021-06-29 16:54:19,112:[metrics.py:479 -        metrics_main() ] ==============================================
+INFO:2021-06-29 16:54:19,113:[metrics.py:480 -        metrics_main() ] counts pearson: 0.7561016486750022
+INFO:2021-06-29 16:54:19,113:[metrics.py:481 -        metrics_main() ] counts spearman: 0.7545770860428727
+INFO:2021-06-29 16:54:21,946:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-06-29 16:54:56,512:[metrics.py:465 -        metrics_main() ] 		min		max		median
+INFO:2021-06-29 16:54:56,515:[metrics.py:468 -        metrics_main() ] mnll		0.041		0.774		0.205
+INFO:2021-06-29 16:54:56,516:[metrics.py:470 -        metrics_main() ] cross_entropy	5.000		8.958		6.062
+INFO:2021-06-29 16:54:56,517:[metrics.py:472 -        metrics_main() ] jsd		0.264		0.829		0.654
+INFO:2021-06-29 16:54:56,518:[metrics.py:474 -        metrics_main() ] pearson		-0.130		0.896		0.421
+INFO:2021-06-29 16:54:56,519:[metrics.py:476 -        metrics_main() ] spearman	-0.176		0.739		0.284
+INFO:2021-06-29 16:54:56,520:[metrics.py:478 -        metrics_main() ] mse		0.011		3.405		0.066
+INFO:2021-06-29 16:54:56,520:[metrics.py:479 -        metrics_main() ] ==============================================
+INFO:2021-06-29 16:54:56,521:[metrics.py:480 -        metrics_main() ] counts pearson: 0.7573587696868339
+INFO:2021-06-29 16:54:56,521:[metrics.py:481 -        metrics_main() ] counts spearman: 0.7501569668779849

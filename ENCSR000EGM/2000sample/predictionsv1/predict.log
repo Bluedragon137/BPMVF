@@ -1,0 +1,80 @@
+INFO:2021-07-01 17:55:49,503:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0_plus': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/plus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_plus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}, 'task0_minus': {'strand': 1, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/minus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_minus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}}
+INFO:2021-07-01 17:55:49,504:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ENCSR000EGM/models/model_split000.h5
+INFO:2021-07-01 17:56:01,116:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-01 17:56:01,438:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-01 17:56:01,531:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 0
+INFO:2021-07-01 17:56:01,532:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus.bw
+INFO:2021-07-01 17:56:01,533:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus_exponentiated_counts.bw
+INFO:2021-07-01 17:56:01,535:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus.bw
+INFO:2021-07-01 17:56:01,535:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus_exponentiated_counts.bw
+DEBUG:2021-07-01 17:56:01,543:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+WARNING:2021-07-01 17:56:01,629:[generators.py:680 -          _epoch_run() ] One or more process threads are not being assigned data for parallel batch generation. You should reduce the number of threads using the --threads option for better performance. Inspect logs for batch assignments.
+DEBUG:2021-07-01 17:56:01,630:[generators.py:690 -          _epoch_run() ] test skipping process 0, df size (0, 2), num_batches 0
+DEBUG:2021-07-01 17:56:01,630:[generators.py:696 -          _epoch_run() ] test num_batches list [0]
+DEBUG:2021-07-01 17:56:01,631:[generators.py:719 -          _epoch_run() ] test skipping stealer thread 0 
+DEBUG:2021-07-01 17:56:01,631:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-01 17:56:01,632:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-01 17:56:01,633:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-01 17:56:01,633:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-01 17:56:01,645:[predict.py:306 -             predict() ] Total Elapsed Time: 0.11287546157836914 secs
+INFO:2021-07-01 18:25:55,994:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0_plus': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/plus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_plus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}, 'task0_minus': {'strand': 1, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/minus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_minus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}}
+INFO:2021-07-01 18:25:56,005:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ENCSR000EGM/models/model_split000.h5
+INFO:2021-07-01 18:26:05,788:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-01 18:26:05,937:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-01 18:26:06,013:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 0
+INFO:2021-07-01 18:26:06,014:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus.bw
+INFO:2021-07-01 18:26:06,015:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus_exponentiated_counts.bw
+INFO:2021-07-01 18:26:06,017:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus.bw
+INFO:2021-07-01 18:26:06,017:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus_exponentiated_counts.bw
+DEBUG:2021-07-01 18:26:06,026:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+WARNING:2021-07-01 18:26:06,080:[generators.py:680 -          _epoch_run() ] One or more process threads are not being assigned data for parallel batch generation. You should reduce the number of threads using the --threads option for better performance. Inspect logs for batch assignments.
+DEBUG:2021-07-01 18:26:06,081:[generators.py:690 -          _epoch_run() ] test skipping process 0, df size (0, 2), num_batches 0
+DEBUG:2021-07-01 18:26:06,081:[generators.py:696 -          _epoch_run() ] test num_batches list [0]
+DEBUG:2021-07-01 18:26:06,082:[generators.py:719 -          _epoch_run() ] test skipping stealer thread 0 
+DEBUG:2021-07-01 18:26:06,082:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-01 18:26:06,083:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-01 18:26:06,083:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-01 18:26:06,083:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-01 18:26:06,095:[predict.py:306 -             predict() ] Total Elapsed Time: 0.08079767227172852 secs
+INFO:2021-07-01 20:42:15,538:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0_plus': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/plus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_plus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}, 'task0_minus': {'strand': 1, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/minus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_minus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}}
+INFO:2021-07-01 20:42:15,557:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ENCSR000EGM/models/model_split000.h5
+INFO:2021-07-01 20:42:23,425:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-01 20:42:23,541:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-01 20:42:23,606:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 0
+INFO:2021-07-01 20:42:23,607:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus.bw
+INFO:2021-07-01 20:42:23,607:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus_exponentiated_counts.bw
+INFO:2021-07-01 20:42:23,610:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus.bw
+INFO:2021-07-01 20:42:23,610:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus_exponentiated_counts.bw
+DEBUG:2021-07-01 20:42:23,619:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+WARNING:2021-07-01 20:42:23,668:[generators.py:680 -          _epoch_run() ] One or more process threads are not being assigned data for parallel batch generation. You should reduce the number of threads using the --threads option for better performance. Inspect logs for batch assignments.
+DEBUG:2021-07-01 20:42:23,668:[generators.py:690 -          _epoch_run() ] test skipping process 0, df size (0, 2), num_batches 0
+DEBUG:2021-07-01 20:42:23,669:[generators.py:696 -          _epoch_run() ] test num_batches list [0]
+DEBUG:2021-07-01 20:42:23,670:[generators.py:719 -          _epoch_run() ] test skipping stealer thread 0 
+DEBUG:2021-07-01 20:42:23,670:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-01 20:42:23,671:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-01 20:42:23,671:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-01 20:42:23,672:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-01 20:42:23,683:[predict.py:306 -             predict() ] Total Elapsed Time: 0.07646441459655762 secs
+INFO:2021-07-01 20:42:44,390:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0_plus': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/plus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_plus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}, 'task0_minus': {'strand': 1, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/minus.bw', 'control': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_minus.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaksv1.bed'}}
+INFO:2021-07-01 20:42:44,391:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ENCSR000EGM/models/model_split000.h5
+INFO:2021-07-01 20:42:52,123:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-01 20:42:52,167:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-01 20:42:52,233:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 0
+INFO:2021-07-01 20:42:52,233:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus.bw
+INFO:2021-07-01 20:42:52,234:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_plus_exponentiated_counts.bw
+INFO:2021-07-01 20:42:52,236:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus.bw
+INFO:2021-07-01 20:42:52,237:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ENCSR000EGM/predictionsv1/model_split000_task0_minus_exponentiated_counts.bw
+DEBUG:2021-07-01 20:42:52,246:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+WARNING:2021-07-01 20:42:52,299:[generators.py:680 -          _epoch_run() ] One or more process threads are not being assigned data for parallel batch generation. You should reduce the number of threads using the --threads option for better performance. Inspect logs for batch assignments.
+DEBUG:2021-07-01 20:42:52,299:[generators.py:690 -          _epoch_run() ] test skipping process 0, df size (0, 2), num_batches 0
+DEBUG:2021-07-01 20:42:52,300:[generators.py:696 -          _epoch_run() ] test num_batches list [0]
+DEBUG:2021-07-01 20:42:52,301:[generators.py:719 -          _epoch_run() ] test skipping stealer thread 0 
+DEBUG:2021-07-01 20:42:52,301:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-01 20:42:52,302:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-01 20:42:52,302:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-01 20:42:52,303:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-01 20:42:52,313:[predict.py:306 -             predict() ] Total Elapsed Time: 0.0799872875213623 secs
