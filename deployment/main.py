@@ -22,7 +22,7 @@ def home():
         allele1 = request.form['allele1']
         allele2 = request.form['allele2']
         generate_output(cell_type, chromosome, position, allele1, allele2)
-        #return render_template('output.html', input = model_output)
+        return render_template('output.html')
     return render_template('index.html', form=form)
 
 app.run(host='0.0.0.0', port=50000)
