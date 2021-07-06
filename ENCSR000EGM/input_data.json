@@ -1,12 +1,12 @@
 {
     "task0_plus": {"strand": 0, 
                   "task_id": 0, 
-                  "signal": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/plus.bw", 
-                  "control": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_plus.bw", 
-                  "peaks": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaks.bed"},
+                  "signal": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/plus.bw", 
+                  "control": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/control_plus.bw", 
+                  "peaks": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/peaks.bed"},
     "task0_minus": {"strand": 1, 
                    "task_id": 0, 
-                   "signal": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/minus.bw", 
-                   "control": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/control_minus.bw",
-                   "peaks": "/wynton/home/corces/allan/BPMVF/ENCSR000EGM/data/peaks.bed"} 
+                   "signal": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/minus.bw", 
+                   "control": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/control_minus.bw",
+                   "peaks": "/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM/data/peaks.bed"} 
 }
