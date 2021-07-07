@@ -2,6 +2,8 @@
 
 BASE_DIR=/Users/alexlan/Desktop/Research/BPMVF/ENCSR000EGM
 REFERENCE_DIR=/Users/alexlan/Desktop/Research/BPMVF/reference
+# BASE_DIR=/wynton/home/corces/allan/BPMVF/ENCSR000EGM
+# REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/models
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes

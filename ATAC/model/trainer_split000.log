@@ -1,0 +1,55 @@
+INFO:2021-07-07 16:34:45,755:[training.py:223 -  train_and_validate() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-07 16:34:45,849:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-07 16:34:46,628:[generators.py:447 -            __init__() ] mode 'train': Data size (with 11 padded rows) - 167680
+INFO:2021-07-07 16:34:46,983:[generators.py:447 -            __init__() ] mode 'val': Data size (with 484 padded rows) - 19200
+INFO:2021-07-07 16:34:46,986:[training.py:248 -  train_and_validate() ] TRAINING SIZE - (167680, 2)
+INFO:2021-07-07 16:34:46,987:[training.py:249 -  train_and_validate() ] VALIDATION SIZE - (19200, 2)
+INFO:2021-07-07 16:34:46,988:[training.py:260 -  train_and_validate() ] TRAINING STEPS - 2620
+INFO:2021-07-07 16:34:46,988:[training.py:261 -  train_and_validate() ] VALIDATION STEPS - 300
+DEBUG:2021-07-07 16:34:46,989:[training.py:264 -  train_and_validate() ] New BPNet1000d8 model
+DEBUG:2021-07-07 16:34:57,688:[training.py:283 -  train_and_validate() ] Compiling model
+INFO:2021-07-07 16:34:57,689:[training.py:285 -  train_and_validate() ] counts_loss_weight - 300.29
+DEBUG:2021-07-07 16:34:57,728:[training.py:325 -  train_and_validate() ] Training started ...
+INFO:2021-07-07 16:34:57,728:[training.py:328 -  train_and_validate() ] Training Epoch 1
+DEBUG:2021-07-07 16:34:57,922:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (16768, 2), sum(num_batches) 262
+DEBUG:2021-07-07 16:34:57,967:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (16768, 2), sum(num_batches) 524
+DEBUG:2021-07-07 16:34:58,001:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (16768, 2), sum(num_batches) 786
+DEBUG:2021-07-07 16:34:58,033:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (16768, 2), sum(num_batches) 1048
+DEBUG:2021-07-07 16:34:58,058:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (16768, 2), sum(num_batches) 1310
+DEBUG:2021-07-07 16:34:58,083:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (16768, 2), sum(num_batches) 1572
+DEBUG:2021-07-07 16:34:58,110:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (16768, 2), sum(num_batches) 1834
+DEBUG:2021-07-07 16:34:58,135:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (16768, 2), sum(num_batches) 2096
+DEBUG:2021-07-07 16:34:58,160:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (16768, 2), sum(num_batches) 2358
+DEBUG:2021-07-07 16:34:58,188:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (16768, 2), sum(num_batches) 2620
+DEBUG:2021-07-07 16:34:58,209:[generators.py:696 -          _epoch_run() ] train num_batches list [262, 262, 262, 262, 262, 262, 262, 262, 262, 262]
+DEBUG:2021-07-07 16:34:58,210:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [262] 
+DEBUG:2021-07-07 16:34:58,212:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [262] 
+DEBUG:2021-07-07 16:34:58,213:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [262] 
+DEBUG:2021-07-07 16:34:58,214:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [262] 
+DEBUG:2021-07-07 16:34:58,215:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [262] 
+DEBUG:2021-07-07 16:34:58,216:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [262] 
+DEBUG:2021-07-07 16:34:58,217:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [262] 
+DEBUG:2021-07-07 16:34:58,218:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [262] 
+DEBUG:2021-07-07 16:34:58,219:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [262] 
+DEBUG:2021-07-07 16:34:58,220:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [262] 
+DEBUG:2021-07-07 16:34:58,223:[generators.py:744 -                 gen() ] train Batch generation for epoch 0 started
+DEBUG:2021-07-07 16:35:38,344:[generators.py:592 -        _proc_target() ] train process 3 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:38,366:[generators.py:615 -            _stealer() ] train stealer thread 3 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:38,667:[generators.py:592 -        _proc_target() ] train process 0 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:38,679:[generators.py:615 -            _stealer() ] train stealer thread 0 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:38,842:[generators.py:592 -        _proc_target() ] train process 8 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:38,857:[generators.py:615 -            _stealer() ] train stealer thread 8 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:39,080:[generators.py:592 -        _proc_target() ] train process 6 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:39,101:[generators.py:615 -            _stealer() ] train stealer thread 6 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:39,183:[generators.py:592 -        _proc_target() ] train process 2 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:39,206:[generators.py:615 -            _stealer() ] train stealer thread 2 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:39,643:[generators.py:592 -        _proc_target() ] train process 1 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:39,657:[generators.py:615 -            _stealer() ] train stealer thread 1 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:39,973:[generators.py:592 -        _proc_target() ] train process 4 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:39,986:[generators.py:615 -            _stealer() ] train stealer thread 4 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:40,039:[generators.py:592 -        _proc_target() ] train process 7 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:40,059:[generators.py:615 -            _stealer() ] train stealer thread 7 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:40,081:[generators.py:592 -        _proc_target() ] train process 5 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:40,095:[generators.py:615 -            _stealer() ] train stealer thread 5 got 262 batches from mpq
+DEBUG:2021-07-07 16:35:40,543:[generators.py:592 -        _proc_target() ] train process 9 put 262 batches into mpq
+DEBUG:2021-07-07 16:35:40,563:[generators.py:615 -            _stealer() ] train stealer thread 9 got 262 batches from mpq
