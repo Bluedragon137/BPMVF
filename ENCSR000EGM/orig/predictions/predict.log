@@ -1,0 +1,24 @@
+
+INFO:2021-06-29 16:08:07,419:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0_plus': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/plus.bw', 'control': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/control_plus.bw', 'peaks': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/peaks.bed'}, 'task0_minus': {'strand': 1, 'task_id': 0, 'signal': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/minus.bw', 'control': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/control_minus.bw', 'peaks': '/wynton/home/corces/allan/basepairmodels/ENCSR000EGM/data/peaks.bed'}}
+INFO:2021-06-29 16:08:07,420:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/basepairmodels/ENCSR000EGM/models/model_split000.h5
+INFO:2021-06-29 16:08:17,031:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-06-29 16:08:17,208:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-06-29 16:08:17,526:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 6085
+INFO:2021-06-29 16:08:17,527:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/basepairmodels/ENCSR000EGM/predictions/model_split000_task0_plus.bw
+INFO:2021-06-29 16:08:17,527:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/basepairmodels/ENCSR000EGM/predictions/model_split000_task0_plus_exponentiated_counts.bw
+INFO:2021-06-29 16:08:17,530:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/basepairmodels/ENCSR000EGM/predictions/model_split000_task0_minus.bw
+INFO:2021-06-29 16:08:17,530:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/basepairmodels/ENCSR000EGM/predictions/model_split000_task0_minus_exponentiated_counts.bw
+DEBUG:2021-06-29 16:08:17,538:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-06-29 16:08:17,601:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (6085, 2), sum(num_batches) 6085
+DEBUG:2021-06-29 16:08:17,656:[generators.py:696 -          _epoch_run() ] test num_batches list [6085]
+DEBUG:2021-06-29 16:08:17,658:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [6085] 
+DEBUG:2021-06-29 16:08:17,659:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-06-29 16:10:49,947:[generators.py:592 -        _proc_target() ] test process 0 put 6085 batches into mpq
+DEBUG:2021-06-29 16:10:49,954:[generators.py:615 -            _stealer() ] test stealer thread 0 got 6085 batches from mpq
+DEBUG:2021-06-29 16:27:25,444:[generators.py:756 -                 gen() ] test waiting to join process 0
+DEBUG:2021-06-29 16:27:25,463:[generators.py:761 -                 gen() ] test waiting to join thread 0
+DEBUG:2021-06-29 16:27:25,463:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-06-29 16:27:25,464:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-06-29 16:27:25,464:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-06-29 16:27:25,695:[predict.py:306 -             predict() ] Total Elapsed Time: 1148.1685411930084 secs
