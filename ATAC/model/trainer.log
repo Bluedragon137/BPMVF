@@ -2,3 +2,47 @@ INFO:2021-07-07 16:34:45,540:[training.py:576 -train_and_validate_ksplits() ] Sp
 INFO:2021-07-07 16:34:45,541:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr17', 'chrY', 'chr4', 'chr6', 'chrX', 'chr5', 'chr19', 'chr15', 'chr7', 'chr21', 'chr12', 'chr11', 'chr13', 'chr14', 'chr22', 'chr20', 'chr3', 'chr2', 'chr18', 'chr16', 'chr9']
 INFO:2021-07-07 16:34:45,542:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
 DEBUG:2021-07-07 16:34:45,543:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 16:59:50,566:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 16:59:50,584:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr22', 'chr3', 'chr19', 'chr11', 'chr2', 'chrX', 'chr6', 'chr21', 'chr13', 'chr12', 'chr14', 'chr5', 'chrY', 'chr16', 'chr17', 'chr4', 'chr7', 'chr15', 'chr20', 'chr9', 'chr18']
+INFO:2021-07-07 16:59:50,585:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 16:59:50,586:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 17:03:52,837:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 17:03:52,849:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr13', 'chr4', 'chr16', 'chr20', 'chr11', 'chr15', 'chr17', 'chr14', 'chrX', 'chr21', 'chr6', 'chr2', 'chr3', 'chrY', 'chr12', 'chr22', 'chr7', 'chr18', 'chr19', 'chr5', 'chr9']
+INFO:2021-07-07 17:03:52,850:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 17:03:52,851:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 17:28:48,607:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 17:28:48,619:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr13', 'chr14', 'chr21', 'chr19', 'chr3', 'chr6', 'chr20', 'chr7', 'chr17', 'chr12', 'chr11', 'chr15', 'chr2', 'chrX', 'chr22', 'chr16', 'chr9', 'chr4', 'chr5', 'chr18', 'chrY']
+INFO:2021-07-07 17:28:48,620:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 17:28:48,621:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 17:29:47,333:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 17:29:47,335:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr2', 'chr6', 'chr11', 'chrY', 'chr4', 'chr15', 'chr17', 'chr9', 'chr16', 'chr14', 'chr19', 'chr3', 'chr7', 'chr5', 'chr22', 'chr20', 'chr12', 'chr18', 'chr21', 'chrX', 'chr13']
+INFO:2021-07-07 17:29:47,335:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 17:29:47,336:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 17:30:20,987:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 17:30:20,988:[training.py:577 -train_and_validate_ksplits() ] Train: ['chrY', 'chr15', 'chr5', 'chr16', 'chr9', 'chr21', 'chr12', 'chr14', 'chr18', 'chr6', 'chr22', 'chr11', 'chr19', 'chr3', 'chr4', 'chr2', 'chr20', 'chrX', 'chr13', 'chr17', 'chr7']
+INFO:2021-07-07 17:30:20,989:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 17:30:20,990:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 17:46:44,923:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 17:46:45,012:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr17', 'chr6', 'chr14', 'chr22', 'chr11', 'chr18', 'chr2', 'chr9', 'chr7', 'chrX', 'chrY', 'chr15', 'chr20', 'chr19', 'chr12', 'chr16', 'chr5', 'chr4', 'chr13', 'chr3', 'chr21']
+INFO:2021-07-07 17:46:45,014:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 17:46:45,017:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 18:17:32,446:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 18:17:32,462:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr17', 'chrY', 'chr22', 'chr2', 'chr4', 'chr14', 'chr21', 'chr9', 'chr7', 'chr12', 'chr15', 'chr16', 'chr3', 'chr13', 'chr6', 'chr19', 'chrX', 'chr20', 'chr18', 'chr11', 'chr5']
+INFO:2021-07-07 18:17:32,463:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 18:17:32,463:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 18:20:09,508:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 18:20:09,519:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr17', 'chr18', 'chr15', 'chr11', 'chr5', 'chr6', 'chr14', 'chrX', 'chr20', 'chrY', 'chr9', 'chr4', 'chr3', 'chr22', 'chr19', 'chr2', 'chr21', 'chr12', 'chr16', 'chr7', 'chr13']
+INFO:2021-07-07 18:20:09,520:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 18:20:09,521:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 18:21:51,868:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 18:21:51,879:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr18', 'chrX', 'chr22', 'chr3', 'chr17', 'chr20', 'chr6', 'chr16', 'chr5', 'chr15', 'chr19', 'chr11', 'chr7', 'chrY', 'chr2', 'chr4', 'chr12', 'chr14', 'chr9', 'chr21', 'chr13']
+INFO:2021-07-07 18:21:51,880:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 18:21:51,881:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 19:42:40,301:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 19:42:40,315:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr9', 'chr20', 'chr19', 'chrY', 'chr16', 'chr21', 'chr18', 'chrX', 'chr6', 'chr17', 'chr3', 'chr13', 'chr14', 'chr5', 'chr12', 'chr11', 'chr4', 'chr22', 'chr2', 'chr15', 'chr7']
+INFO:2021-07-07 19:42:40,316:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 19:42:40,317:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process
+INFO:2021-07-07 19:46:30,980:[training.py:576 -train_and_validate_ksplits() ] Split #0
+INFO:2021-07-07 19:46:30,992:[training.py:577 -train_and_validate_ksplits() ] Train: ['chr17', 'chr16', 'chr5', 'chr4', 'chr20', 'chr9', 'chr3', 'chrY', 'chr15', 'chr18', 'chr2', 'chr14', 'chr22', 'chrX', 'chr11', 'chr21', 'chr12', 'chr6', 'chr13', 'chr7', 'chr19']
+INFO:2021-07-07 19:46:30,993:[training.py:578 -train_and_validate_ksplits() ] Val: ['chr10', 'chr8']
+DEBUG:2021-07-07 19:46:30,993:[training.py:585 -train_and_validate_ksplits() ] Split 0: Creating training process

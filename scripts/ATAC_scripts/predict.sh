@@ -1,19 +1,19 @@
-BASE_DIR=***Insert base directory path***
+BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/model
 PREDICTIONS_DIR=$BASE_DIR/predictions 
 INPUT_DATA=$BASE_DIR/input_data.json
 
-REFERENCE_DIR=***Insert reference directory path***
+REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
-REFERENCE_GENOME=$REFERENCE_DIR/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta
+REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
 INPUT_SEQ_LEN=2114
 OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/***Insert model name here with .h5*** \
+    --model $MODEL_DIR/bpnet.64.15.01_split000.h5 \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \
