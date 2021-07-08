@@ -1,4 +1,10 @@
 #!/bin/bash
+#$ -S /bin/bash
+#$ -o /wynton/home/corces/allan/BPMVF/scripts/job_output
+#$ -cwd
+#$ -j y
+#$ -l mem_free=10G
+#$ -l h_rt=24:00:00
 
 BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
 DATA_DIR=$BASE_DIR/data
@@ -15,8 +21,8 @@ REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
-MODEL_NAME=bpnetv0.1
-FILTERS=64
+MODEL_NAME=bpnet256.10.001
+FILTERS=256
 LEARNING_RATE=0.001
 COUNTS_LOSS_WEIGHT=300.29 #300.28898500099734 for Cluster 24
 
@@ -35,7 +41,7 @@ train \
    --sequence-generator-name BPNet \
    --model-output-filename $MODEL_NAME \
    --threads 10 \
-   --epochs 1 \
+   --epochs 15 \
    --batch-size 64 \
    --input-seq-len 2114 \
    --output-len 1000 \
