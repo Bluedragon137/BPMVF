@@ -1,4 +1,10 @@
 #!/bin/bash
+#$ -S /bin/bash
+#$ -o /wynton/home/corces/allan/BPMVF/scripts/job_output
+#$ -cwd
+#$ -j y
+#$ -l mem_free=10G
+#$ -l h_rt=4:00:00
 
 BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
@@ -23,7 +29,7 @@ counts_out_pfx=$SHAP_DIR/count_scores
 python importance_hdf5_to_bigwig_v2.py \
     -h5 $counts_scores_h5 \
     -r $peaks_valid_scores \
-    -c $chorm_sizes \
+    -c $CHROM_SIZES \
     -o $counts_out_pfx.bw \
     -s $counts_out_pfx.stats.txt \
     -t 1
@@ -34,7 +40,7 @@ profile_out_pfx=$SHAP_DIR/profile_scores
 python importance_hdf5_to_bigwig_v2.py \
     -h5 $profile_scores_h5 \
     -r $peaks_valid_scores \
-    -c $chorm_sizes \
+    -c $CHROM_SIZES \
     -o $profile_out_pfx.bw \
     -s $profile_out_pfx.stats.txt \
     -t 1

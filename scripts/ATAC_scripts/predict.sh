@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/model
@@ -13,7 +15,7 @@ OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/bpnet.64.15.01_split000.h5 \
+    --model $MODEL_DIR/bpnet.256.15.001_split000.h5 \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \

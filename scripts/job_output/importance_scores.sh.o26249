@@ -1,0 +1,510 @@
+mkdir: cannot create directory '/tmp/lock-gpu3': File exists
+2021-07-08 12:01:23.840324: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-07-08 12:02:23,159 - root - INFO - Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.15.001_split000.h5
+2021-07-08 12:02:25.573565: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-08 12:02:25.667740: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-07-08 12:02:25.891555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:25.903479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:60:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:25.913372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:b1:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:25.917623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:da:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:25.918275: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-07-08 12:02:27.358401: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-07-08 12:02:27.365883: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-07-08 12:02:27.974514: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-08 12:02:28.217682: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-08 12:02:30.985801: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-08 12:02:31.706235: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-07-08 12:02:31.732311: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-07-08 12:02:31.756328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3
+2021-07-08 12:02:31.764950: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-08 12:02:31.780205: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-08 12:02:32.215475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:1a:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:32.277334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:60:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:32.279610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:b1:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:32.304709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:da:00.0 name: NVIDIA TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-08 12:02:32.315140: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-07-08 12:02:32.322624: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-07-08 12:02:32.323139: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-07-08 12:02:32.333119: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-08 12:02:32.341024: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-08 12:02:32.359479: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-08 12:02:32.371025: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-07-08 12:02:32.371692: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-07-08 12:02:32.382613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3
+2021-07-08 12:02:32.403518: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-07-08 12:02:37.745046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-08 12:02:37.753258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 2 3 
+2021-07-08 12:02:37.762743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N N N N 
+2021-07-08 12:02:37.767006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   N N N N 
+2021-07-08 12:02:37.792889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 2:   N N N N 
+2021-07-08 12:02:37.795649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 3:   N N N N 
+2021-07-08 12:02:37.822466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22475 MB memory) -> physical GPU (device: 0, name: NVIDIA TITAN RTX, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-07-08 12:02:37.861555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22314 MB memory) -> physical GPU (device: 1, name: NVIDIA TITAN RTX, pci bus id: 0000:60:00.0, compute capability: 7.5)
+2021-07-08 12:02:37.892196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 21549 MB memory) -> physical GPU (device: 2, name: NVIDIA TITAN RTX, pci bus id: 0000:b1:00.0, compute capability: 7.5)
+2021-07-08 12:02:37.902138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 21647 MB memory) -> physical GPU (device: 3, name: NVIDIA TITAN RTX, pci bus id: 0000:da:00.0, compute capability: 7.5)
+2021-07-08 12:02:38.000844: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-07-08 12:02:38.077460: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2600000000 Hz
+2021-07-08 12:02:41,586 - numexpr.utils - INFO - Note: detected 72 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2021-07-08 12:02:41,598 - numexpr.utils - INFO - Note: NumExpr detected 72 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2021-07-08 12:02:41,752 - root - INFO - #Peaks - 19162
+2021-07-08 12:02:41,762 - root - INFO - Opening reference file ...
+2021-07-08 12:02:41,840 - root - INFO - Opening control bigWigs ...
+X shape (19162, 2114, 4)
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+(None, 1000, 1)
+Warning:  StopGradient used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  AddV2 used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  SpaceToBatchND used in model but handling of op is not specified by shap; will use original  gradients
+Warning:  BatchToSpaceND used in model but handling of op is not specified by shap; will use original  gradients
+2021-07-08 12:02:55,188 - root - INFO - Generating 'counts' shap scores
+Done 0 examples of 19162
+2021-07-08 12:02:56.546918: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-07-08 12:03:01.934684: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-07-08 12:03:02.040585: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+Done 100 examples of 19162
+Done 200 examples of 19162
+Done 300 examples of 19162
+Done 400 examples of 19162
+Done 500 examples of 19162
+Done 600 examples of 19162
+Done 700 examples of 19162
+Done 800 examples of 19162
+Done 900 examples of 19162
+Done 1000 examples of 19162
+Done 1100 examples of 19162
+Done 1200 examples of 19162
+Done 1300 examples of 19162
+Done 1400 examples of 19162
+Done 1500 examples of 19162
+Done 1600 examples of 19162
+Done 1700 examples of 19162
+Done 1800 examples of 19162
+Done 1900 examples of 19162
+Done 2000 examples of 19162
+Done 2100 examples of 19162
+Done 2200 examples of 19162
+Done 2300 examples of 19162
+Done 2400 examples of 19162
+Done 2500 examples of 19162
+Done 2600 examples of 19162
+Done 2700 examples of 19162
+Done 2800 examples of 19162
+Done 2900 examples of 19162
+Done 3000 examples of 19162
+Done 3100 examples of 19162
+Done 3200 examples of 19162
+Done 3300 examples of 19162
+Done 3400 examples of 19162
+Done 3500 examples of 19162
+Done 3600 examples of 19162
+Done 3700 examples of 19162
+Done 3800 examples of 19162
+Done 3900 examples of 19162
+Done 4000 examples of 19162
+Done 4100 examples of 19162
+Done 4200 examples of 19162
+Done 4300 examples of 19162
+Done 4400 examples of 19162
+Done 4500 examples of 19162
+Done 4600 examples of 19162
+Done 4700 examples of 19162
+Done 4800 examples of 19162
+Done 4900 examples of 19162
+Done 5000 examples of 19162
+Done 5100 examples of 19162
+Done 5200 examples of 19162
+Done 5300 examples of 19162
+Done 5400 examples of 19162
+Done 5500 examples of 19162
+Done 5600 examples of 19162
+Done 5700 examples of 19162
+Done 5800 examples of 19162
+Done 5900 examples of 19162
+Done 6000 examples of 19162
+Done 6100 examples of 19162
+Done 6200 examples of 19162
+Done 6300 examples of 19162
+Done 6400 examples of 19162
+Done 6500 examples of 19162
+Done 6600 examples of 19162
+Done 6700 examples of 19162
+Done 6800 examples of 19162
+Done 6900 examples of 19162
+Done 7000 examples of 19162
+Done 7100 examples of 19162
+Done 7200 examples of 19162
+Done 7300 examples of 19162
+Done 7400 examples of 19162
+Done 7500 examples of 19162
+Done 7600 examples of 19162
+Done 7700 examples of 19162
+Done 7800 examples of 19162
+Done 7900 examples of 19162
+Done 8000 examples of 19162
+Done 8100 examples of 19162
+Done 8200 examples of 19162
+Done 8300 examples of 19162
+Done 8400 examples of 19162
+Done 8500 examples of 19162
+Done 8600 examples of 19162
+Done 8700 examples of 19162
+Done 8800 examples of 19162
+Done 8900 examples of 19162
+Done 9000 examples of 19162
+Done 9100 examples of 19162
+Done 9200 examples of 19162
+Done 9300 examples of 19162
+Done 9400 examples of 19162
+Done 9500 examples of 19162
+Done 9600 examples of 19162
+Done 9700 examples of 19162
+Done 9800 examples of 19162
+Done 9900 examples of 19162
+Done 10000 examples of 19162
+Done 10100 examples of 19162
+Done 10200 examples of 19162
+Done 10300 examples of 19162
+Done 10400 examples of 19162
+Done 10500 examples of 19162
+Done 10600 examples of 19162
+Done 10700 examples of 19162
+Done 10800 examples of 19162
+Done 10900 examples of 19162
+Done 11000 examples of 19162
+Done 11100 examples of 19162
+Done 11200 examples of 19162
+Done 11300 examples of 19162
+Done 11400 examples of 19162
+Done 11500 examples of 19162
+Done 11600 examples of 19162
+Done 11700 examples of 19162
+Done 11800 examples of 19162
+Done 11900 examples of 19162
+Done 12000 examples of 19162
+Done 12100 examples of 19162
+Done 12200 examples of 19162
+Done 12300 examples of 19162
+Done 12400 examples of 19162
+Done 12500 examples of 19162
+Done 12600 examples of 19162
+Done 12700 examples of 19162
+Done 12800 examples of 19162
+Done 12900 examples of 19162
+Done 13000 examples of 19162
+Done 13100 examples of 19162
+Done 13200 examples of 19162
+Done 13300 examples of 19162
+Done 13400 examples of 19162
+Done 13500 examples of 19162
+Done 13600 examples of 19162
+Done 13700 examples of 19162
+Done 13800 examples of 19162
+Done 13900 examples of 19162
+Done 14000 examples of 19162
+Done 14100 examples of 19162
+Done 14200 examples of 19162
+Done 14300 examples of 19162
+Done 14400 examples of 19162
+Done 14500 examples of 19162
+Done 14600 examples of 19162
+Done 14700 examples of 19162
+Done 14800 examples of 19162
+Done 14900 examples of 19162
+Done 15000 examples of 19162
+Done 15100 examples of 19162
+Done 15200 examples of 19162
+Done 15300 examples of 19162
+Done 15400 examples of 19162
+Done 15500 examples of 19162
+Done 15600 examples of 19162
+Done 15700 examples of 19162
+Done 15800 examples of 19162
+Done 15900 examples of 19162
+Done 16000 examples of 19162
+Done 16100 examples of 19162
+Done 16200 examples of 19162
+Done 16300 examples of 19162
+Done 16400 examples of 19162
+Done 16500 examples of 19162
+Done 16600 examples of 19162
+Done 16700 examples of 19162
+Done 16800 examples of 19162
+Done 16900 examples of 19162
+Done 17000 examples of 19162
+Done 17100 examples of 19162
+Done 17200 examples of 19162
+Done 17300 examples of 19162
+Done 17400 examples of 19162
+Done 17500 examples of 19162
+Done 17600 examples of 19162
+Done 17700 examples of 19162
+Done 17800 examples of 19162
+Done 17900 examples of 19162
+Done 18000 examples of 19162
+Done 18100 examples of 19162
+Done 18200 examples of 19162
+Done 18300 examples of 19162
+Done 18400 examples of 19162
+Done 18500 examples of 19162
+Done 18600 examples of 19162
+Done 18700 examples of 19162
+Done 18800 examples of 19162
+Done 18900 examples of 19162
+Done 19000 examples of 19162
+Done 19100 examples of 19162
+2021-07-08 12:52:34,933 - root - INFO - Saving 'counts' scores
+2021-07-08 12:53:26,396 - root - INFO - Generating 'profile' shap scores
+Done 0 examples of 19162
+Done 100 examples of 19162
+Done 200 examples of 19162
+Done 300 examples of 19162
+Done 400 examples of 19162
+Done 500 examples of 19162
+Done 600 examples of 19162
+Done 700 examples of 19162
+Done 800 examples of 19162
+Done 900 examples of 19162
+Done 1000 examples of 19162
+Done 1100 examples of 19162
+Done 1200 examples of 19162
+Done 1300 examples of 19162
+Done 1400 examples of 19162
+Done 1500 examples of 19162
+Done 1600 examples of 19162
+Done 1700 examples of 19162
+Done 1800 examples of 19162
+Done 1900 examples of 19162
+Done 2000 examples of 19162
+Done 2100 examples of 19162
+Done 2200 examples of 19162
+Done 2300 examples of 19162
+Done 2400 examples of 19162
+Done 2500 examples of 19162
+Done 2600 examples of 19162
+Done 2700 examples of 19162
+Done 2800 examples of 19162
+Done 2900 examples of 19162
+Done 3000 examples of 19162
+Done 3100 examples of 19162
+Done 3200 examples of 19162
+Done 3300 examples of 19162
+Done 3400 examples of 19162
+Done 3500 examples of 19162
+Done 3600 examples of 19162
+Done 3700 examples of 19162
+Done 3800 examples of 19162
+Done 3900 examples of 19162
+Done 4000 examples of 19162
+Done 4100 examples of 19162
+Done 4200 examples of 19162
+Done 4300 examples of 19162
+Done 4400 examples of 19162
+Done 4500 examples of 19162
+Done 4600 examples of 19162
+Done 4700 examples of 19162
+Done 4800 examples of 19162
+Done 4900 examples of 19162
+Done 5000 examples of 19162
+Done 5100 examples of 19162
+Done 5200 examples of 19162
+Done 5300 examples of 19162
+Done 5400 examples of 19162
+Done 5500 examples of 19162
+Done 5600 examples of 19162
+Done 5700 examples of 19162
+Done 5800 examples of 19162
+Done 5900 examples of 19162
+Done 6000 examples of 19162
+Done 6100 examples of 19162
+Done 6200 examples of 19162
+Done 6300 examples of 19162
+Done 6400 examples of 19162
+Done 6500 examples of 19162
+Done 6600 examples of 19162
+Done 6700 examples of 19162
+Done 6800 examples of 19162
+Done 6900 examples of 19162
+Done 7000 examples of 19162
+Done 7100 examples of 19162
+Done 7200 examples of 19162
+Done 7300 examples of 19162
+Done 7400 examples of 19162
+Done 7500 examples of 19162
+Done 7600 examples of 19162
+Done 7700 examples of 19162
+Done 7800 examples of 19162
+Done 7900 examples of 19162
+Done 8000 examples of 19162
+Done 8100 examples of 19162
+Done 8200 examples of 19162
+Done 8300 examples of 19162
+Done 8400 examples of 19162
+Done 8500 examples of 19162
+Done 8600 examples of 19162
+Done 8700 examples of 19162
+Done 8800 examples of 19162
+Done 8900 examples of 19162
+Done 9000 examples of 19162
+Done 9100 examples of 19162
+Done 9200 examples of 19162
+Done 9300 examples of 19162
+Done 9400 examples of 19162
+Done 9500 examples of 19162
+Done 9600 examples of 19162
+Done 9700 examples of 19162
+Done 9800 examples of 19162
+Done 9900 examples of 19162
+Done 10000 examples of 19162
+Done 10100 examples of 19162
+Done 10200 examples of 19162
+Done 10300 examples of 19162
+Done 10400 examples of 19162
+Done 10500 examples of 19162
+Done 10600 examples of 19162
+Done 10700 examples of 19162
+Done 10800 examples of 19162
+Done 10900 examples of 19162
+Done 11000 examples of 19162
+Done 11100 examples of 19162
+Done 11200 examples of 19162
+Done 11300 examples of 19162
+Done 11400 examples of 19162
+Done 11500 examples of 19162
+Done 11600 examples of 19162
+Done 11700 examples of 19162
+Done 11800 examples of 19162
+Done 11900 examples of 19162
+Done 12000 examples of 19162
+Done 12100 examples of 19162
+Done 12200 examples of 19162
+Done 12300 examples of 19162
+Done 12400 examples of 19162
+Done 12500 examples of 19162
+Done 12600 examples of 19162
+Done 12700 examples of 19162
+Done 12800 examples of 19162
+Done 12900 examples of 19162
+Done 13000 examples of 19162
+Done 13100 examples of 19162
+Done 13200 examples of 19162
+Done 13300 examples of 19162
+Done 13400 examples of 19162
+Done 13500 examples of 19162
+Done 13600 examples of 19162
+Done 13700 examples of 19162
+Done 13800 examples of 19162
+Done 13900 examples of 19162
+Done 14000 examples of 19162
+Done 14100 examples of 19162
+Done 14200 examples of 19162
+Done 14300 examples of 19162
+Done 14400 examples of 19162
+Done 14500 examples of 19162
+Done 14600 examples of 19162
+Done 14700 examples of 19162
+Done 14800 examples of 19162
+Done 14900 examples of 19162
+Done 15000 examples of 19162
+Done 15100 examples of 19162
+Done 15200 examples of 19162
+Done 15300 examples of 19162
+Done 15400 examples of 19162
+Done 15500 examples of 19162
+Done 15600 examples of 19162
+Done 15700 examples of 19162
+Done 15800 examples of 19162
+Done 15900 examples of 19162
+Done 16000 examples of 19162
+Done 16100 examples of 19162
+Done 16200 examples of 19162
+Done 16300 examples of 19162
+Done 16400 examples of 19162
+Done 16500 examples of 19162
+Done 16600 examples of 19162
+Done 16700 examples of 19162
+Done 16800 examples of 19162
+Done 16900 examples of 19162
+Done 17000 examples of 19162
+Done 17100 examples of 19162
+Done 17200 examples of 19162
+Done 17300 examples of 19162
+Done 17400 examples of 19162
+Done 17500 examples of 19162
+Done 17600 examples of 19162
+Done 17700 examples of 19162
+Done 17800 examples of 19162
+Done 17900 examples of 19162
+Done 18000 examples of 19162
+Done 18100 examples of 19162
+Done 18200 examples of 19162
+Done 18300 examples of 19162
+Done 18400 examples of 19162
+Done 18500 examples of 19162
+Done 18600 examples of 19162
+Done 18700 examples of 19162
+Done 18800 examples of 19162
+Done 18900 examples of 19162
+Done 19000 examples of 19162
+Done 19100 examples of 19162
+2021-07-08 13:43:08,308 - root - INFO - Saving 'profile' scores

@@ -34,9 +34,9 @@ def gen_graph(sA, sC, sG, sT, entry, startpos, trim_start, trim_end, chrom, ispr
     plt.bar(ind, sG, color = '#D69824')
     plt.bar(ind, sT, color = '#D40603')
     if isprofile:
-        plt.savefig('static/images/profileimp' + str(entry) + '.png')
+        plt.savefig('static/images/ATAC_importances/ATACprofileimp' + str(entry) + '.png')
     else:
-        plt.savefig('static/images/countsimp' + str(entry) + '.png')
+        plt.savefig('static/images/ATAC_importances/ATACcountsimp' + str(entry) + '.png')
 
 def vis_shap(counts_hdf5, profile_hdf5, entry):
     c_chrom, c_start, c_end, c_scores, c_seqs, p_chrom, p_start, p_end, p_scores, p_seqs = load_hdf5(counts_hdf5, profile_hdf5)
@@ -47,4 +47,6 @@ def vis_shap(counts_hdf5, profile_hdf5, entry):
     gen_graph(psA, psC, psG, psT, entry, p_start[entry], start, end, p_chrom[entry], True)
 
 if __name__ == '__main__':
-    vis_shap('../ENCSR000EGM/shap/counts_scores.h5', '../ENCSR000EGM/shap/profile_scores.h5', 0)
+    for i in range(20):
+        vis_shap('../ATAC/shap/counts_scores.h5', '../ATAC/shap/profile_scores.h5', i)
+    #vis_shap('../ENCSR000EGM/shap/counts_scores.h5', '../ENCSR000EGM/shap/profile_scores.h5', 0)
