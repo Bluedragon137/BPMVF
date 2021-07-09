@@ -2,3 +2,14 @@
 *.fa
 *.pyc
 *.narrowPeak
+ENCSR000EGM/data/*
+ENCSR000EGM/orig/shap/*
+ENCSR000EGM/shap/*
+ATAC/bams/*
+BPNet-ATAC-seq/*
+
+ATAC/data/C24signal.bedGraph
+ATAC/data/C24signal.bw
+ATAC/data/Cluster24.bpnet.unstranded.bw
+ATAC/shap/counts_scores.h5
+ATAC/shap/profile_scores.h5
