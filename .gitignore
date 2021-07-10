@@ -13,3 +13,5 @@ ATAC/data/C24signal.bw
 ATAC/data/Cluster24.bpnet.unstranded.bw
 ATAC/shap/counts_scores.h5
 ATAC/shap/profile_scores.h5
+ATAC/bpnet256.15.001/shap/256.15.counts_scores.h5
+ATAC/bpnet256.15.001/shap/256.15.profile_scores.h5

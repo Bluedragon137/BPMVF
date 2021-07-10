@@ -15,7 +15,7 @@ OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/bpnet.256.15.001_split000.h5 \
+    --model $MODEL_DIR/bpnet.256.100.001.01_split000.h5 \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \

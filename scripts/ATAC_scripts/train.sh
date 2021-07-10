@@ -21,7 +21,7 @@ REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
-MODEL_NAME=bpnet256.10.001
+MODEL_NAME=bpnet256.100.001.01 #filters / epochs / lr / negative control
 FILTERS=256
 LEARNING_RATE=0.001
 COUNTS_LOSS_WEIGHT=300.29 #300.28898500099734 for Cluster 24
@@ -36,12 +36,13 @@ train \
    --chroms $(paste -s -d ' ' $REFERENCE_DIR/chroms.txt) \
    --filters $FILTERS \
    --learning-rate $LEARNING_RATE \
+   --negative-sampling-rate 0.10 \
    --counts-loss-weight $COUNTS_LOSS_WEIGHT \
    --model-arch-name BPNet1000d8 \
    --sequence-generator-name BPNet \
    --model-output-filename $MODEL_NAME \
    --threads 10 \
-   --epochs 15 \
+   --epochs 100 \
    --batch-size 64 \
    --input-seq-len 2114 \
    --output-len 1000 \

@@ -29,7 +29,7 @@ mkdir -p $SHAP_DIR
 
 shap_scores \
     --reference-genome $REFERENCE_GENOME \
-    --model $MODEL_DIR/bpnet.256.15.001_split000.h5 \
+    --model $MODEL_DIR/bpnet.256.100.001.01_split000.h5 \
     --bed-file $PEAKS_F \
     --chroms chr1 \
     --output-dir $SHAP_DIR \

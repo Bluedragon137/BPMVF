@@ -1,21 +1,47 @@
-INFO:2021-07-08 15:27:50,500:[predict.py:360 -        predict_main() ] INPUT DATA -
+INFO:2021-07-09 11:17:56,849:[predict.py:360 -        predict_main() ] INPUT DATA -
 {'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
-INFO:2021-07-08 15:27:50,512:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.15.001_split000.h5
-INFO:2021-07-08 15:28:02,181:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
-INFO:2021-07-08 15:28:02,255:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-INFO:2021-07-08 15:28:02,617:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 19162
-INFO:2021-07-08 15:28:02,617:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0.bw
-INFO:2021-07-08 15:28:02,618:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0_exponentiated_counts.bw
-DEBUG:2021-07-08 15:28:02,628:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
-DEBUG:2021-07-08 15:28:02,678:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (19162, 2), sum(num_batches) 19162
-DEBUG:2021-07-08 15:28:02,750:[generators.py:696 -          _epoch_run() ] test num_batches list [19162]
-DEBUG:2021-07-08 15:28:02,751:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [19162] 
-DEBUG:2021-07-08 15:28:02,754:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
-DEBUG:2021-07-08 15:31:09,436:[generators.py:592 -        _proc_target() ] test process 0 put 19162 batches into mpq
-DEBUG:2021-07-08 15:31:09,437:[generators.py:615 -            _stealer() ] test stealer thread 0 got 19162 batches from mpq
-DEBUG:2021-07-08 15:57:47,377:[generators.py:756 -                 gen() ] test waiting to join process 0
-DEBUG:2021-07-08 15:57:47,399:[generators.py:761 -                 gen() ] test waiting to join thread 0
-DEBUG:2021-07-08 15:57:47,399:[generators.py:765 -                 gen() ] test join complete for process 0
-DEBUG:2021-07-08 15:57:47,400:[generators.py:768 -                 gen() ] test Finished join for epoch 1
-DEBUG:2021-07-08 15:57:47,400:[generators.py:770 -                 gen() ] test Ready for next epoch
-INFO:2021-07-08 15:57:47,626:[predict.py:306 -             predict() ] Total Elapsed Time: 1785.0090873241425 secs
+INFO:2021-07-09 11:17:56,851:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 12:20:01,079:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-09 12:20:01,095:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 13:13:26,638:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-09 13:13:26,654:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 13:23:17,766:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-09 13:23:18,000:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 13:36:24,518:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-09 13:36:24,533:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 13:36:34,719:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-09 13:36:34,804:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-09 13:36:35,155:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 19162
+INFO:2021-07-09 13:36:35,156:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0.bw
+INFO:2021-07-09 13:36:35,157:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0_exponentiated_counts.bw
+DEBUG:2021-07-09 13:36:35,167:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-09 13:36:35,216:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (19162, 2), sum(num_batches) 19162
+DEBUG:2021-07-09 13:36:35,271:[generators.py:696 -          _epoch_run() ] test num_batches list [19162]
+DEBUG:2021-07-09 13:36:35,272:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [19162] 
+DEBUG:2021-07-09 13:36:35,273:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+INFO:2021-07-09 13:46:30,756:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-09 13:46:30,770:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet.256.100.001.01_split000.h5
+INFO:2021-07-09 13:46:37,116:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-09 13:46:37,154:[utils.py:142 -   _init_num_threads() ] Note: detected 72 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+INFO:2021-07-09 13:46:37,155:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 72 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-09 13:46:37,465:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 19162
+INFO:2021-07-09 13:46:37,466:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0.bw
+INFO:2021-07-09 13:46:37,466:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet_task0_exponentiated_counts.bw
+DEBUG:2021-07-09 13:46:37,472:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-09 13:46:37,516:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (19162, 2), sum(num_batches) 19162
+DEBUG:2021-07-09 13:46:37,574:[generators.py:696 -          _epoch_run() ] test num_batches list [19162]
+DEBUG:2021-07-09 13:46:37,576:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [19162] 
+DEBUG:2021-07-09 13:46:37,577:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-09 13:49:55,145:[generators.py:592 -        _proc_target() ] test process 0 put 19162 batches into mpq
+DEBUG:2021-07-09 13:49:55,146:[generators.py:615 -            _stealer() ] test stealer thread 0 got 19162 batches from mpq
+DEBUG:2021-07-09 14:25:29,192:[generators.py:756 -                 gen() ] test waiting to join process 0
+DEBUG:2021-07-09 14:25:29,212:[generators.py:761 -                 gen() ] test waiting to join thread 0
+DEBUG:2021-07-09 14:25:29,212:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-09 14:25:29,213:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-09 14:25:29,213:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-09 14:25:29,353:[predict.py:306 -             predict() ] Total Elapsed Time: 2331.887217760086 secs
