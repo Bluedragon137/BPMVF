@@ -15,3 +15,5 @@ ATAC/shap/counts_scores.h5
 ATAC/shap/profile_scores.h5
 ATAC/bpnet256.15.001/shap/256.15.counts_scores.h5
 ATAC/bpnet256.15.001/shap/256.15.profile_scores.h5
+ATAC/bpnet256.100.001.01/shap/counts_scores.h5
+ATAC/bpnet256.100.001.01/shap/profile_scores.h5
