@@ -21,7 +21,7 @@ REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
-MODEL_NAME=bpnet-hint.256.50.001 #filters / epochs / lr / negative control
+MODEL_NAME=bpnet-hint.256.100.001 #filters / epochs / lr / negative control
 FILTERS=256
 LEARNING_RATE=0.001
 COUNTS_LOSS_WEIGHT=300.29 #300.28898500099734 for Cluster 24
@@ -41,7 +41,7 @@ train \
    --sequence-generator-name BPNet \
    --model-output-filename $MODEL_NAME \
    --threads 10 \
-   --epochs 50 \
+   --epochs 100 \
    --batch-size 64 \
    --input-seq-len 2114 \
    --output-len 1000 \
