@@ -3,7 +3,7 @@
 #$ -o /wynton/home/corces/allan/BPMVF/scripts/job_output
 #$ -cwd
 #$ -j y
-#$ -l mem_free=10G
+#$ -l mem_free=20G
 #$ -l h_rt=24:00:00
 
 BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
@@ -14,12 +14,14 @@ BOUNDS_DIR=$BASE_DIR/bounds
 METRICS_DIR=$BASE_DIR/metrics
 MODEL_DIR=$BASE_DIR/model
 
-INPUT_DATA=$BASE_DIR/input_data.json
+INPUT_DATA=$BASE_DIR/input_data_hint.json
 CV_SPLITS=$BASE_DIR/splits.json
 
 INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
-PEAKS_DIR=$DATA_DIR/peaks
-PEAKS_F=$PEAKS_DIR/Cluster24.idr.optimal.narrowPeak
+# PEAKS_DIR=$DATA_DIR/peaks
+# PEAKS_F=$PEAKS_DIR/Cluster24.idr.optimal.narrowPeak
+PEAKS_DIR=$BASE_DIR/HINT
+PEAKS_F=$PEAKS_DIR/C24_full.bed
 
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
@@ -29,7 +31,7 @@ mkdir -p $SHAP_DIR
 
 shap_scores \
     --reference-genome $REFERENCE_GENOME \
-    --model $MODEL_DIR/bpnet.256.100.001.01_split000.h5 \
+    --model $MODEL_DIR/bpnet-hint.256.100.001_split000.h5 \
     --bed-file $PEAKS_F \
     --chroms chr1 \
     --output-dir $SHAP_DIR \
