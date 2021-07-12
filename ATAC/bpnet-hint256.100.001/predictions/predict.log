@@ -1,0 +1,80 @@
+INFO:2021-07-10 11:42:03,841:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak'}}
+INFO:2021-07-10 11:42:03,842:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 13:38:18,964:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/HINT/C24_full.bed'}}
+INFO:2021-07-10 13:38:18,965:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/HINT/C24_full.bed'}}
+INFO:2021-07-10 13:38:18,977:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 13:38:18,978:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 13:38:24,971:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-10 13:38:24,974:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-10 13:38:25,042:[utils.py:142 -   _init_num_threads() ] Note: detected 128 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+INFO:2021-07-10 13:38:25,043:[utils.py:142 -   _init_num_threads() ] Note: detected 128 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+INFO:2021-07-10 13:38:25,044:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 128 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-10 13:38:25,044:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 128 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-10 13:38:26,122:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 69124
+INFO:2021-07-10 13:38:26,123:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0.bw
+INFO:2021-07-10 13:38:26,124:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0_exponentiated_counts.bw
+DEBUG:2021-07-10 13:38:26,133:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+INFO:2021-07-10 13:38:26,138:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 69124
+INFO:2021-07-10 13:38:26,139:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0.bw
+INFO:2021-07-10 13:38:26,140:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0_exponentiated_counts.bw
+DEBUG:2021-07-10 13:38:26,147:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-10 13:38:26,186:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (69124, 2), sum(num_batches) 69124
+DEBUG:2021-07-10 13:38:26,188:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (69124, 2), sum(num_batches) 69124
+DEBUG:2021-07-10 13:38:26,227:[generators.py:696 -          _epoch_run() ] test num_batches list [69124]
+DEBUG:2021-07-10 13:38:26,228:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [69124] 
+DEBUG:2021-07-10 13:38:26,229:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-10 13:38:26,234:[generators.py:696 -          _epoch_run() ] test num_batches list [69124]
+DEBUG:2021-07-10 13:38:26,235:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [69124] 
+DEBUG:2021-07-10 13:38:26,237:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-10 13:53:19,945:[generators.py:592 -        _proc_target() ] test process 0 put 69124 batches into mpq
+DEBUG:2021-07-10 13:53:19,946:[generators.py:615 -            _stealer() ] test stealer thread 0 got 69124 batches from mpq
+DEBUG:2021-07-10 13:53:20,900:[generators.py:592 -        _proc_target() ] test process 0 put 69124 batches into mpq
+DEBUG:2021-07-10 13:53:20,900:[generators.py:615 -            _stealer() ] test stealer thread 0 got 69124 batches from mpq
+INFO:2021-07-10 15:10:03,034:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/HINT/C24_full.bed'}}
+INFO:2021-07-10 15:10:03,054:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 15:10:11,883:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-10 15:10:11,984:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-10 15:10:13,223:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 69124
+INFO:2021-07-10 15:10:13,229:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0.bw
+INFO:2021-07-10 15:10:13,230:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0_exponentiated_counts.bw
+DEBUG:2021-07-10 15:10:13,241:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-10 15:10:13,505:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (69124, 2), sum(num_batches) 69124
+DEBUG:2021-07-10 15:10:13,563:[generators.py:696 -          _epoch_run() ] test num_batches list [69124]
+DEBUG:2021-07-10 15:10:13,564:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [69124] 
+DEBUG:2021-07-10 15:10:13,567:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+INFO:2021-07-10 15:13:22,362:[predict.py:361 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/HINT/C24_full.bed'}}
+INFO:2021-07-10 15:13:22,378:[predict.py:364 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 15:13:30,787:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-10 15:13:32,078:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 69124
+INFO:2021-07-10 15:13:32,079:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0.bw
+INFO:2021-07-10 15:13:32,079:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0_exponentiated_counts.bw
+DEBUG:2021-07-10 15:13:32,092:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-10 15:13:32,163:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (69124, 2), sum(num_batches) 69124
+DEBUG:2021-07-10 15:13:32,200:[generators.py:696 -          _epoch_run() ] test num_batches list [69124]
+DEBUG:2021-07-10 15:13:32,202:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [69124] 
+DEBUG:2021-07-10 15:13:32,204:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+INFO:2021-07-10 15:28:06,920:[predict.py:361 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/ATAC/HINT/C24_full.bed'}}
+INFO:2021-07-10 15:28:06,935:[predict.py:364 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+INFO:2021-07-10 15:28:11,651:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-10 15:28:12,638:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 69124
+INFO:2021-07-10 15:28:12,639:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0.bw
+INFO:2021-07-10 15:28:12,640:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/ATAC/predictions/bpnet-hint_task0_exponentiated_counts.bw
+DEBUG:2021-07-10 15:28:12,648:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-10 15:28:12,690:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (69124, 2), sum(num_batches) 69124
+DEBUG:2021-07-10 15:28:12,719:[generators.py:696 -          _epoch_run() ] test num_batches list [69124]
+DEBUG:2021-07-10 15:28:12,720:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [69124] 
+DEBUG:2021-07-10 15:28:12,722:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-10 15:42:21,438:[generators.py:592 -        _proc_target() ] test process 0 put 69124 batches into mpq
+DEBUG:2021-07-10 15:42:21,439:[generators.py:615 -            _stealer() ] test stealer thread 0 got 69124 batches from mpq
+DEBUG:2021-07-10 17:14:11,576:[generators.py:756 -                 gen() ] test waiting to join process 0
+DEBUG:2021-07-10 17:14:11,587:[generators.py:761 -                 gen() ] test waiting to join thread 0
+DEBUG:2021-07-10 17:14:11,588:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-10 17:14:11,589:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-10 17:14:11,589:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-10 17:14:11,702:[predict.py:306 -             predict() ] Total Elapsed Time: 6359.062673568726 secs

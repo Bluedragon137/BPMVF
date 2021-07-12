@@ -14181,3 +14181,1680 @@ INFO:2021-07-10 08:38:23,678:[training.py:389 -  train_and_validate() ] Restorin
 INFO:2021-07-10 08:38:23,686:[training.py:411 -  train_and_validate() ] Total Elapsed Time: 21270.713121652603
 INFO:2021-07-10 08:38:23,871:[training.py:433 -  train_and_validate() ] Finished saving model: /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
 INFO:2021-07-10 08:38:23,877:[training.py:447 -  train_and_validate() ] Finished saving training and validation history: /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.history.json
+INFO:2021-07-11 01:26:03,346:[training.py:223 -  train_and_validate() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-11 01:26:03,462:[utils.py:142 -   _init_num_threads() ] Note: detected 72 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+INFO:2021-07-11 01:26:03,463:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 72 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-11 01:26:05,394:[generators.py:447 -            __init__() ] mode 'train': Data size (with 282 padded rows) - 604160
+INFO:2021-07-11 01:26:06,400:[generators.py:447 -            __init__() ] mode 'val': Data size (with 438 padded rows) - 67840
+INFO:2021-07-11 01:26:06,401:[training.py:248 -  train_and_validate() ] TRAINING SIZE - (604160, 2)
+INFO:2021-07-11 01:26:06,402:[training.py:249 -  train_and_validate() ] VALIDATION SIZE - (67840, 2)
+INFO:2021-07-11 01:26:06,403:[training.py:260 -  train_and_validate() ] TRAINING STEPS - 9440
+INFO:2021-07-11 01:26:06,404:[training.py:261 -  train_and_validate() ] VALIDATION STEPS - 1060
+DEBUG:2021-07-11 01:26:06,405:[training.py:264 -  train_and_validate() ] New BPNet1000d8 model
+DEBUG:2021-07-11 01:26:12,306:[training.py:283 -  train_and_validate() ] Compiling model
+INFO:2021-07-11 01:26:12,307:[training.py:285 -  train_and_validate() ] counts_loss_weight - 300.29
+DEBUG:2021-07-11 01:26:12,327:[training.py:325 -  train_and_validate() ] Training started ...
+INFO:2021-07-11 01:26:12,327:[training.py:328 -  train_and_validate() ] Training Epoch 1
+DEBUG:2021-07-11 01:26:12,377:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 01:26:12,411:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 01:26:12,437:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 01:26:12,463:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 01:26:12,490:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 01:26:12,517:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 01:26:12,544:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 01:26:12,573:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 01:26:12,614:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 01:26:12,646:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 01:26:12,673:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 01:26:12,674:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 01:26:12,675:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 01:26:12,676:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 01:26:12,677:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 01:26:12,678:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 01:26:12,679:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 01:26:12,680:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 01:26:12,680:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 01:26:12,681:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 01:26:12,682:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 01:26:12,684:[generators.py:744 -                 gen() ] train Batch generation for epoch 0 started
+DEBUG:2021-07-11 01:28:32,157:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,171:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,488:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,502:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,602:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,623:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,624:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,644:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,867:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,886:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,903:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,920:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,920:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,923:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:32,938:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:32,944:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:34,179:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:34,195:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 01:28:34,978:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 01:28:34,991:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 02:04:07,462:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 02:04:07,494:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 02:04:07,494:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 02:04:07,495:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 02:04:07,495:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 02:04:07,495:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 02:04:07,496:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 02:04:07,496:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 02:04:07,496:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 02:04:07,497:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 02:04:07,498:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 02:04:07,498:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 02:04:07,499:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 02:04:07,499:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 02:04:07,500:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 02:04:07,500:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 02:04:07,501:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 02:04:07,501:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 02:04:07,502:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 02:04:07,502:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 02:04:07,503:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 02:04:07,503:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 02:04:07,504:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 02:04:07,504:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 02:04:07,505:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 02:04:07,505:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 02:04:07,506:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 02:04:07,506:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 02:04:07,507:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 02:04:07,507:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 02:04:07,508:[generators.py:768 -                 gen() ] train Finished join for epoch 0
+DEBUG:2021-07-11 02:04:07,508:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 02:04:08,751:[training.py:352 -  train_and_validate() ] Validation Epoch 1
+DEBUG:2021-07-11 02:04:08,763:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 02:04:08,912:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 02:04:09,056:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 02:04:09,186:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 02:04:09,343:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 02:04:09,475:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 02:04:09,655:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 02:04:09,782:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 02:04:09,912:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 02:04:10,044:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 02:04:10,171:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 02:04:10,172:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 02:04:10,174:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 02:04:10,175:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 02:04:10,232:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 02:04:10,235:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 02:04:10,297:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 02:04:10,326:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 02:04:10,329:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 02:04:10,354:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 02:04:10,385:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 02:04:10,388:[generators.py:744 -                 gen() ] val Batch generation for epoch 0 started
+DEBUG:2021-07-11 02:04:22,624:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:22,638:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:22,997:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,010:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,135:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,153:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,165:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,177:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,194:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,209:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,483:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,500:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,628:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,646:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:23,968:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:23,982:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:24,150:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:24,169:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 02:04:24,721:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 02:04:24,736:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 02:05:32,928:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 02:05:32,930:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 02:05:32,931:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 02:05:32,931:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 02:05:32,932:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 02:05:32,932:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 02:05:32,933:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 02:05:32,933:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 02:05:32,934:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 02:05:32,934:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 02:05:32,934:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 02:05:32,935:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 02:05:32,935:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 02:05:32,936:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 02:05:32,936:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 02:05:32,937:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 02:05:32,937:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 02:05:32,938:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 02:05:32,938:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 02:05:32,939:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 02:05:32,939:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 02:05:32,940:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 02:05:32,940:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 02:05:32,941:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 02:05:32,941:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 02:05:32,941:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 02:05:32,942:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 02:05:32,942:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 02:05:32,943:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 02:05:32,943:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 02:05:32,943:[generators.py:768 -                 gen() ] val Finished join for epoch 0
+DEBUG:2021-07-11 02:05:32,944:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 02:05:33,015:[training.py:407 -  train_and_validate() ] Current learning rate - 0.001000, Stop Training - False
+INFO:2021-07-11 02:05:33,016:[training.py:328 -  train_and_validate() ] Training Epoch 2
+DEBUG:2021-07-11 02:05:33,021:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 02:05:33,158:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 02:05:33,295:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 02:05:33,434:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 02:05:33,578:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 02:05:33,714:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 02:05:33,862:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 02:05:33,996:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 02:05:34,139:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 02:05:34,274:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 02:05:34,416:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 02:05:34,418:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 02:05:34,420:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 02:05:34,420:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 02:05:34,424:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 02:05:34,448:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 02:05:34,463:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 02:05:34,481:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 02:05:34,558:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 02:05:34,598:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 02:05:34,649:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 02:05:34,705:[generators.py:744 -                 gen() ] train Batch generation for epoch 1 started
+DEBUG:2021-07-11 02:07:42,031:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,055:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:42,161:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,183:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:42,791:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,821:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:42,835:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,838:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,848:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:42,861:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:42,899:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:42,911:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:43,135:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:43,148:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:43,428:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:43,442:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:43,813:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:43,836:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 02:07:45,012:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 02:07:45,027:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 02:43:01,604:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 02:43:01,635:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 02:43:01,636:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 02:43:01,636:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 02:43:01,637:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 02:43:01,637:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 02:43:01,637:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 02:43:01,638:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 02:43:01,638:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 02:43:01,639:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 02:43:01,639:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 02:43:01,640:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 02:43:01,640:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 02:43:01,641:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 02:43:01,641:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 02:43:01,642:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 02:43:01,642:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 02:43:01,642:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 02:43:01,643:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 02:43:01,643:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 02:43:01,644:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 02:43:01,644:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 02:43:01,644:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 02:43:01,645:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 02:43:01,645:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 02:43:01,645:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 02:43:01,646:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 02:43:01,646:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 02:43:01,646:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 02:43:01,647:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 02:43:01,647:[generators.py:768 -                 gen() ] train Finished join for epoch 1
+DEBUG:2021-07-11 02:43:01,647:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 02:43:02,100:[training.py:352 -  train_and_validate() ] Validation Epoch 2
+DEBUG:2021-07-11 02:43:02,106:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 02:43:02,382:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 02:43:02,651:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 02:43:02,908:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 02:43:03,187:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 02:43:03,447:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 02:43:03,744:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 02:43:04,022:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 02:43:04,344:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 02:43:04,625:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 02:43:04,905:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 02:43:04,905:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 02:43:04,907:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 02:43:04,909:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 02:43:04,980:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 02:43:05,048:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 02:43:05,049:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 02:43:05,176:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 02:43:05,385:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 02:43:05,410:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 02:43:05,460:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 02:43:05,662:[generators.py:744 -                 gen() ] val Batch generation for epoch 1 started
+DEBUG:2021-07-11 02:43:14,826:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:14,839:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:15,582:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:15,601:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:15,653:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:15,670:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:15,709:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:15,727:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:15,830:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:15,847:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:16,440:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:16,457:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:17,070:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:17,082:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:17,177:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:17,193:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:17,558:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:17,579:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 02:43:18,769:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 02:43:18,792:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 02:44:27,191:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 02:44:27,193:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 02:44:27,194:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 02:44:27,194:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 02:44:27,195:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 02:44:27,195:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 02:44:27,195:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 02:44:27,196:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 02:44:27,196:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 02:44:27,197:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 02:44:27,197:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 02:44:27,198:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 02:44:27,198:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 02:44:27,199:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 02:44:27,199:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 02:44:27,199:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 02:44:27,200:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 02:44:27,200:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 02:44:27,201:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 02:44:27,201:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 02:44:27,202:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 02:44:27,202:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 02:44:27,202:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 02:44:27,203:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 02:44:27,203:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 02:44:27,204:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 02:44:27,204:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 02:44:27,204:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 02:44:27,205:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 02:44:27,205:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 02:44:27,206:[generators.py:768 -                 gen() ] val Finished join for epoch 1
+DEBUG:2021-07-11 02:44:27,206:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 02:44:27,279:[training.py:407 -  train_and_validate() ] Current learning rate - 0.001000, Stop Training - False
+INFO:2021-07-11 02:44:27,280:[training.py:328 -  train_and_validate() ] Training Epoch 3
+DEBUG:2021-07-11 02:44:27,292:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 02:44:27,485:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 02:44:27,672:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 02:44:27,873:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 02:44:28,063:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 02:44:28,312:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 02:44:28,545:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 02:44:28,754:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 02:44:28,993:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 02:44:29,227:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 02:44:29,486:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 02:44:29,487:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 02:44:29,491:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 02:44:29,493:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 02:44:29,511:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 02:44:29,543:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 02:44:29,562:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 02:44:29,566:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 02:44:29,571:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 02:44:29,666:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 02:44:29,732:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 02:44:29,862:[generators.py:744 -                 gen() ] train Batch generation for epoch 2 started
+DEBUG:2021-07-11 02:46:42,085:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:42,099:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:42,923:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:42,946:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:43,866:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:43,882:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:44,042:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:44,056:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:44,114:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:44,141:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:44,158:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:44,182:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:44,241:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:44,262:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:44,701:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:44,713:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:45,586:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:45,601:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 02:46:45,671:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 02:46:45,687:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 03:21:55,701:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 03:21:55,751:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 03:21:55,752:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 03:21:55,752:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 03:21:55,753:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 03:21:55,753:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 03:21:55,754:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 03:21:55,754:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 03:21:55,754:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 03:21:55,755:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 03:21:55,755:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 03:21:55,756:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 03:21:55,756:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 03:21:55,757:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 03:21:55,757:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 03:21:55,758:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 03:21:55,758:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 03:21:55,759:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 03:21:55,759:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 03:21:55,759:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 03:21:55,760:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 03:21:55,760:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 03:21:55,761:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 03:21:55,761:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 03:21:55,762:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 03:21:55,762:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 03:21:55,763:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 03:21:55,763:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 03:21:55,764:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 03:21:55,764:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 03:21:55,764:[generators.py:768 -                 gen() ] train Finished join for epoch 2
+DEBUG:2021-07-11 03:21:55,765:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 03:21:56,067:[training.py:352 -  train_and_validate() ] Validation Epoch 3
+DEBUG:2021-07-11 03:21:56,079:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 03:21:56,406:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 03:21:56,778:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 03:21:57,123:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 03:21:57,464:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 03:21:57,830:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 03:21:58,185:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 03:21:58,587:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 03:21:59,095:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 03:21:59,499:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 03:21:59,825:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 03:21:59,826:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 03:21:59,832:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 03:21:59,836:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 03:21:59,898:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 03:21:59,956:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 03:21:59,957:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 03:22:00,105:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 03:22:00,340:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 03:22:00,366:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 03:22:00,474:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 03:22:00,611:[generators.py:744 -                 gen() ] val Batch generation for epoch 2 started
+DEBUG:2021-07-11 03:22:09,375:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:09,391:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:09,836:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:09,853:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:10,309:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:10,327:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:10,998:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:11,019:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:11,126:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:11,155:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:11,199:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:11,297:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:11,612:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:11,632:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:12,308:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:12,328:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:12,649:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:12,670:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 03:22:13,571:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 03:22:13,593:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 03:23:22,320:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 03:23:22,321:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 03:23:22,321:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 03:23:22,322:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 03:23:22,322:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 03:23:22,322:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 03:23:22,323:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 03:23:22,323:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 03:23:22,324:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 03:23:22,324:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 03:23:22,325:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 03:23:22,325:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 03:23:22,326:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 03:23:22,326:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 03:23:22,326:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 03:23:22,327:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 03:23:22,327:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 03:23:22,327:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 03:23:22,328:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 03:23:22,328:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 03:23:22,328:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 03:23:22,329:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 03:23:22,329:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 03:23:22,330:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 03:23:22,330:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 03:23:22,331:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 03:23:22,331:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 03:23:22,331:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 03:23:22,332:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 03:23:22,332:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 03:23:22,332:[generators.py:768 -                 gen() ] val Finished join for epoch 2
+DEBUG:2021-07-11 03:23:22,333:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 03:23:22,396:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000500, Stop Training - False
+INFO:2021-07-11 03:23:22,397:[training.py:328 -  train_and_validate() ] Training Epoch 4
+DEBUG:2021-07-11 03:23:22,405:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 03:23:22,693:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 03:23:22,933:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 03:23:23,212:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 03:23:23,462:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 03:23:23,746:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 03:23:24,031:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 03:23:24,335:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 03:23:24,602:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 03:23:24,867:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 03:23:25,116:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 03:23:25,116:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 03:23:25,118:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 03:23:25,123:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 03:23:25,130:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 03:23:25,164:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 03:23:25,185:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 03:23:25,226:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 03:23:25,258:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 03:23:25,294:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 03:23:25,296:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 03:23:25,517:[generators.py:744 -                 gen() ] train Batch generation for epoch 3 started
+DEBUG:2021-07-11 03:25:32,897:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:32,919:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:33,102:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:33,116:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:33,541:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:33,560:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:34,459:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:34,473:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:35,361:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:35,377:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:35,421:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:35,445:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:35,700:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:35,714:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:35,803:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:35,815:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:36,426:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:36,442:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 03:25:37,486:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 03:25:37,504:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 04:00:51,634:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 04:00:51,669:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 04:00:51,670:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 04:00:51,670:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 04:00:51,670:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 04:00:51,671:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 04:00:51,671:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 04:00:51,672:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 04:00:51,672:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 04:00:51,672:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 04:00:51,673:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 04:00:51,673:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 04:00:51,674:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 04:00:51,674:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 04:00:51,675:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 04:00:51,675:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 04:00:51,676:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 04:00:51,676:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 04:00:51,676:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 04:00:51,677:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 04:00:51,677:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 04:00:51,678:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 04:00:51,678:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 04:00:51,678:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 04:00:51,679:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 04:00:51,679:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 04:00:51,679:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 04:00:51,680:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 04:00:51,680:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 04:00:51,681:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 04:00:51,681:[generators.py:768 -                 gen() ] train Finished join for epoch 3
+DEBUG:2021-07-11 04:00:51,681:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 04:00:51,880:[training.py:352 -  train_and_validate() ] Validation Epoch 4
+DEBUG:2021-07-11 04:00:51,887:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 04:00:52,253:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 04:00:52,574:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 04:00:52,938:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 04:00:53,282:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 04:00:53,650:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 04:00:54,034:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 04:00:54,373:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 04:00:54,712:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 04:00:55,128:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 04:00:55,509:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 04:00:55,509:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 04:00:55,511:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 04:00:55,515:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 04:00:55,571:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 04:00:55,630:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 04:00:55,683:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 04:00:55,744:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 04:00:55,890:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 04:00:55,959:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 04:00:56,055:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 04:00:56,159:[generators.py:744 -                 gen() ] val Batch generation for epoch 3 started
+DEBUG:2021-07-11 04:01:04,841:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:04,860:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:05,558:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:05,580:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:05,697:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:05,729:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:06,235:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:06,250:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:06,644:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:06,662:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:06,922:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:06,938:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:07,641:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:07,661:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:07,835:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:07,851:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:08,011:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:08,024:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 04:01:08,767:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 04:01:08,783:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 04:02:19,116:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 04:02:19,117:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 04:02:19,117:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 04:02:19,117:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 04:02:19,118:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 04:02:19,118:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 04:02:19,119:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 04:02:19,119:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 04:02:19,120:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 04:02:19,120:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 04:02:19,121:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 04:02:19,121:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 04:02:19,122:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 04:02:19,122:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 04:02:19,123:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 04:02:19,123:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 04:02:19,124:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 04:02:19,124:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 04:02:19,124:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 04:02:19,125:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 04:02:19,125:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 04:02:19,126:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 04:02:19,126:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 04:02:19,127:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 04:02:19,127:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 04:02:19,127:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 04:02:19,128:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 04:02:19,128:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 04:02:19,128:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 04:02:19,129:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 04:02:19,129:[generators.py:768 -                 gen() ] val Finished join for epoch 3
+DEBUG:2021-07-11 04:02:19,129:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 04:02:19,194:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000500, Stop Training - False
+INFO:2021-07-11 04:02:19,195:[training.py:328 -  train_and_validate() ] Training Epoch 5
+DEBUG:2021-07-11 04:02:19,213:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 04:02:19,451:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 04:02:19,693:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 04:02:19,931:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 04:02:20,162:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 04:02:20,391:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 04:02:20,618:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 04:02:20,841:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 04:02:21,110:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 04:02:21,362:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 04:02:21,605:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 04:02:21,606:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 04:02:21,610:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 04:02:21,698:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 04:02:21,726:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 04:02:21,761:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 04:02:21,770:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 04:02:21,791:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 04:02:21,796:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 04:02:21,820:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 04:02:21,882:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 04:02:21,960:[generators.py:744 -                 gen() ] train Batch generation for epoch 4 started
+DEBUG:2021-07-11 04:04:36,944:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:36,950:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:37,527:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:37,543:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:37,618:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:37,636:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:37,746:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:37,759:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:38,327:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:38,351:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:38,760:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:38,779:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:39,094:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:39,111:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:39,392:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:39,411:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:39,712:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:39,726:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 04:04:39,883:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 04:04:39,897:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 04:39:48,865:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 04:39:48,903:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 04:39:48,903:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 04:39:48,904:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 04:39:48,906:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 04:39:48,908:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 04:39:48,908:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 04:39:48,909:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 04:39:48,909:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 04:39:48,910:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 04:39:48,910:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 04:39:48,911:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 04:39:48,911:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 04:39:48,912:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 04:39:48,912:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 04:39:48,912:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 04:39:48,913:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 04:39:48,913:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 04:39:48,914:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 04:39:48,914:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 04:39:48,915:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 04:39:48,915:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 04:39:48,915:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 04:39:48,916:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 04:39:48,916:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 04:39:48,918:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 04:39:48,919:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 04:39:48,919:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 04:39:48,919:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 04:39:48,920:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 04:39:48,920:[generators.py:768 -                 gen() ] train Finished join for epoch 4
+DEBUG:2021-07-11 04:39:48,920:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 04:39:49,116:[training.py:352 -  train_and_validate() ] Validation Epoch 5
+DEBUG:2021-07-11 04:39:49,123:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 04:39:49,490:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 04:39:49,840:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 04:39:50,192:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 04:39:50,539:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 04:39:50,883:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 04:39:51,268:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 04:39:51,629:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 04:39:51,989:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 04:39:52,392:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 04:39:52,751:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 04:39:52,752:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 04:39:52,755:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 04:39:52,758:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 04:39:52,831:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 04:39:52,896:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 04:39:52,954:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 04:39:52,956:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 04:39:53,169:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 04:39:53,290:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 04:39:53,324:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 04:39:53,487:[generators.py:744 -                 gen() ] val Batch generation for epoch 4 started
+DEBUG:2021-07-11 04:40:02,127:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:02,158:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:02,505:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:02,536:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:02,946:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:02,973:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:03,108:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:03,130:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:03,512:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:03,527:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:03,783:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:03,808:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:03,895:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:03,915:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:04,694:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:04,787:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:05,060:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:05,074:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 04:40:05,715:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 04:40:05,730:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 04:41:15,296:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 04:41:15,298:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 04:41:15,298:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 04:41:15,299:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 04:41:15,299:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 04:41:15,300:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 04:41:15,300:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 04:41:15,300:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 04:41:15,301:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 04:41:15,301:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 04:41:15,301:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 04:41:15,302:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 04:41:15,302:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 04:41:15,302:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 04:41:15,303:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 04:41:15,303:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 04:41:15,303:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 04:41:15,304:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 04:41:15,304:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 04:41:15,304:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 04:41:15,305:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 04:41:15,305:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 04:41:15,306:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 04:41:15,306:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 04:41:15,306:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 04:41:15,307:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 04:41:15,307:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 04:41:15,307:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 04:41:15,308:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 04:41:15,308:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 04:41:15,308:[generators.py:768 -                 gen() ] val Finished join for epoch 4
+DEBUG:2021-07-11 04:41:15,309:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 04:41:15,619:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000250, Stop Training - False
+INFO:2021-07-11 04:41:15,620:[training.py:328 -  train_and_validate() ] Training Epoch 6
+DEBUG:2021-07-11 04:41:15,632:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 04:41:15,928:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 04:41:16,190:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 04:41:16,457:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 04:41:16,727:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 04:41:16,983:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 04:41:17,290:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 04:41:17,572:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 04:41:17,849:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 04:41:18,139:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 04:41:18,421:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 04:41:18,422:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 04:41:18,425:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 04:41:18,432:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 04:41:18,459:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 04:41:18,490:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 04:41:18,499:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 04:41:18,530:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 04:41:18,539:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 04:41:18,638:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 04:41:18,702:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 04:41:18,748:[generators.py:744 -                 gen() ] train Batch generation for epoch 5 started
+DEBUG:2021-07-11 04:43:27,695:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:27,709:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:27,763:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:27,779:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:28,011:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:28,030:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:28,084:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:28,099:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:28,638:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:28,654:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:29,030:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:29,044:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:29,354:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:29,373:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:29,391:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:29,411:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:30,500:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:30,520:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 04:43:30,914:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 04:43:30,931:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 05:18:47,607:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 05:18:47,641:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 05:18:47,642:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 05:18:47,642:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 05:18:47,643:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 05:18:47,643:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 05:18:47,644:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 05:18:47,644:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 05:18:47,644:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 05:18:47,645:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 05:18:47,645:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 05:18:47,645:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 05:18:47,646:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 05:18:47,646:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 05:18:47,646:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 05:18:47,647:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 05:18:47,647:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 05:18:47,647:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 05:18:47,648:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 05:18:47,648:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 05:18:47,648:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 05:18:47,649:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 05:18:47,649:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 05:18:47,649:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 05:18:47,649:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 05:18:47,650:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 05:18:47,650:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 05:18:47,650:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 05:18:47,651:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 05:18:47,651:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 05:18:47,651:[generators.py:768 -                 gen() ] train Finished join for epoch 5
+DEBUG:2021-07-11 05:18:47,652:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 05:18:47,846:[training.py:352 -  train_and_validate() ] Validation Epoch 6
+DEBUG:2021-07-11 05:18:47,854:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 05:18:48,288:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 05:18:48,702:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 05:18:49,107:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 05:18:49,499:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 05:18:49,902:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 05:18:50,376:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 05:18:50,828:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 05:18:51,237:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 05:18:51,711:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 05:18:52,225:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 05:18:52,226:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 05:18:52,232:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 05:18:52,233:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 05:18:52,293:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 05:18:52,349:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 05:18:52,404:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 05:18:52,498:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 05:18:52,600:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 05:18:52,657:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 05:18:52,745:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 05:18:52,814:[generators.py:744 -                 gen() ] val Batch generation for epoch 5 started
+DEBUG:2021-07-11 05:19:01,105:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:01,135:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:01,922:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:01,942:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:02,256:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:02,279:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:02,630:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:02,648:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:03,007:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:03,027:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:03,333:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:03,366:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:03,503:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:03,518:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:04,021:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:04,032:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:04,662:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:04,687:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 05:19:05,399:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 05:19:05,417:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 05:20:15,983:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 05:20:15,985:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 05:20:15,986:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 05:20:15,986:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 05:20:15,987:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 05:20:15,987:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 05:20:15,987:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 05:20:15,988:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 05:20:15,988:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 05:20:15,988:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 05:20:15,989:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 05:20:15,989:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 05:20:15,989:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 05:20:15,990:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 05:20:15,990:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 05:20:15,990:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 05:20:15,991:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 05:20:15,991:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 05:20:15,991:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 05:20:15,992:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 05:20:15,992:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 05:20:15,992:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 05:20:15,993:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 05:20:15,993:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 05:20:15,993:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 05:20:15,994:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 05:20:15,994:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 05:20:15,994:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 05:20:15,995:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 05:20:15,995:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 05:20:15,995:[generators.py:768 -                 gen() ] val Finished join for epoch 5
+DEBUG:2021-07-11 05:20:15,996:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 05:20:16,272:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000250, Stop Training - False
+INFO:2021-07-11 05:20:16,273:[training.py:328 -  train_and_validate() ] Training Epoch 7
+DEBUG:2021-07-11 05:20:16,278:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 05:20:16,693:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 05:20:17,048:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 05:20:17,391:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 05:20:17,730:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 05:20:18,117:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 05:20:18,456:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 05:20:18,800:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 05:20:19,278:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 05:20:19,613:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 05:20:19,977:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 05:20:19,979:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 05:20:19,983:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 05:20:19,984:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 05:20:20,004:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 05:20:20,026:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 05:20:20,062:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 05:20:20,063:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 05:20:20,154:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 05:20:20,201:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 05:20:20,225:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 05:20:20,351:[generators.py:744 -                 gen() ] train Batch generation for epoch 6 started
+DEBUG:2021-07-11 05:22:28,379:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:28,398:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:30,374:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:30,388:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:30,555:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:30,568:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:30,615:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:30,628:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:30,879:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:30,897:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:30,903:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:30,921:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:31,895:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:31,910:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:31,918:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:31,935:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:32,606:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:32,620:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 05:22:33,143:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 05:22:33,158:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 05:57:50,060:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 05:57:50,094:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 05:57:50,095:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 05:57:50,095:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 05:57:50,096:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 05:57:50,096:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 05:57:50,096:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 05:57:50,097:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 05:57:50,097:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 05:57:50,098:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 05:57:50,098:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 05:57:50,099:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 05:57:50,099:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 05:57:50,100:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 05:57:50,100:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 05:57:50,101:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 05:57:50,101:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 05:57:50,101:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 05:57:50,102:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 05:57:50,103:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 05:57:50,103:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 05:57:50,103:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 05:57:50,104:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 05:57:50,105:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 05:57:50,105:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 05:57:50,105:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 05:57:50,106:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 05:57:50,106:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 05:57:50,107:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 05:57:50,107:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 05:57:50,108:[generators.py:768 -                 gen() ] train Finished join for epoch 6
+DEBUG:2021-07-11 05:57:50,108:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 05:57:50,302:[training.py:352 -  train_and_validate() ] Validation Epoch 7
+DEBUG:2021-07-11 05:57:50,310:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 05:57:50,866:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 05:57:51,373:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 05:57:51,778:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 05:57:52,182:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 05:57:52,708:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 05:57:53,144:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 05:57:53,570:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 05:57:54,055:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 05:57:54,573:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 05:57:55,255:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 05:57:55,257:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 05:57:55,259:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 05:57:55,262:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 05:57:55,330:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 05:57:55,398:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 05:57:55,455:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 05:57:55,578:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 05:57:55,629:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 05:57:55,698:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 05:57:55,768:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 05:57:56,032:[generators.py:744 -                 gen() ] val Batch generation for epoch 6 started
+DEBUG:2021-07-11 05:58:04,654:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:04,682:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:04,733:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:04,750:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:05,498:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:05,522:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:05,633:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:05,646:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:06,388:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:06,403:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:06,714:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:06,734:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:06,929:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:07,019:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:07,879:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:07,885:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:07,891:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:07,899:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 05:58:09,141:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 05:58:09,373:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 05:59:18,837:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 05:59:18,838:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 05:59:18,839:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 05:59:18,840:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 05:59:18,840:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 05:59:18,840:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 05:59:18,841:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 05:59:18,841:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 05:59:18,842:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 05:59:18,842:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 05:59:18,843:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 05:59:18,843:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 05:59:18,844:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 05:59:18,844:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 05:59:18,845:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 05:59:18,845:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 05:59:18,846:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 05:59:18,846:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 05:59:18,846:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 05:59:18,847:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 05:59:18,847:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 05:59:18,848:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 05:59:18,848:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 05:59:18,848:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 05:59:18,849:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 05:59:18,849:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 05:59:18,850:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 05:59:18,850:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 05:59:18,851:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 05:59:18,851:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 05:59:18,851:[generators.py:768 -                 gen() ] val Finished join for epoch 6
+DEBUG:2021-07-11 05:59:18,852:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 05:59:18,913:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000250, Stop Training - False
+INFO:2021-07-11 05:59:18,914:[training.py:328 -  train_and_validate() ] Training Epoch 8
+DEBUG:2021-07-11 05:59:18,922:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 05:59:19,299:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 05:59:19,625:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 05:59:19,961:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 05:59:20,301:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 05:59:20,669:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 05:59:20,997:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 05:59:21,317:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 05:59:21,730:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 05:59:22,215:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 05:59:22,648:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 05:59:22,650:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 05:59:22,652:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 05:59:22,657:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 05:59:22,736:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 05:59:22,741:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 05:59:22,789:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 05:59:22,826:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 05:59:22,851:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 05:59:22,873:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 05:59:22,911:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 05:59:22,985:[generators.py:744 -                 gen() ] train Batch generation for epoch 7 started
+DEBUG:2021-07-11 06:01:30,367:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:30,399:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:30,752:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:30,767:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:30,790:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:30,810:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:31,264:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:31,278:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:31,569:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:31,590:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:32,438:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:32,447:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:32,456:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:32,460:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:32,477:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:32,489:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:32,501:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:32,518:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 06:01:32,579:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 06:01:32,596:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 06:37:00,939:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 06:37:00,973:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 06:37:00,973:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 06:37:00,974:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 06:37:00,974:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 06:37:00,974:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 06:37:00,975:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 06:37:00,975:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 06:37:00,976:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 06:37:00,976:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 06:37:00,977:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 06:37:00,977:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 06:37:00,978:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 06:37:00,978:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 06:37:00,979:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 06:37:00,979:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 06:37:00,979:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 06:37:00,980:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 06:37:00,980:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 06:37:00,981:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 06:37:00,981:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 06:37:00,982:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 06:37:00,982:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 06:37:00,982:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 06:37:00,983:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 06:37:00,983:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 06:37:00,984:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 06:37:00,984:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 06:37:00,984:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 06:37:00,985:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 06:37:00,985:[generators.py:768 -                 gen() ] train Finished join for epoch 7
+DEBUG:2021-07-11 06:37:00,986:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 06:37:01,180:[training.py:352 -  train_and_validate() ] Validation Epoch 8
+DEBUG:2021-07-11 06:37:01,189:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 06:37:01,632:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 06:37:02,035:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 06:37:02,456:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 06:37:02,959:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 06:37:03,360:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 06:37:03,785:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 06:37:04,279:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 06:37:04,802:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 06:37:05,248:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 06:37:05,669:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 06:37:05,670:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 06:37:05,673:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 06:37:05,674:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 06:37:05,745:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 06:37:05,848:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 06:37:05,923:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 06:37:06,037:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 06:37:06,119:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 06:37:06,199:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 06:37:06,389:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 06:37:06,435:[generators.py:744 -                 gen() ] val Batch generation for epoch 7 started
+DEBUG:2021-07-11 06:37:14,906:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:14,933:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:15,182:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:15,195:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:15,770:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:15,784:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:16,105:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:16,119:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:16,358:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:16,449:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:16,622:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:16,641:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:17,382:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:17,396:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:17,699:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:17,710:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:17,887:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:17,899:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 06:37:18,949:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 06:37:19,169:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 06:38:28,718:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 06:38:28,720:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 06:38:28,720:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 06:38:28,721:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 06:38:28,721:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 06:38:28,722:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 06:38:28,722:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 06:38:28,723:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 06:38:28,723:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 06:38:28,723:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 06:38:28,724:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 06:38:28,724:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 06:38:28,725:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 06:38:28,725:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 06:38:28,725:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 06:38:28,726:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 06:38:28,726:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 06:38:28,726:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 06:38:28,727:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 06:38:28,727:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 06:38:28,728:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 06:38:28,728:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 06:38:28,728:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 06:38:28,729:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 06:38:28,729:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 06:38:28,729:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 06:38:28,730:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 06:38:28,730:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 06:38:28,730:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 06:38:28,731:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 06:38:28,731:[generators.py:768 -                 gen() ] val Finished join for epoch 7
+DEBUG:2021-07-11 06:38:28,731:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 06:38:28,994:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000125, Stop Training - False
+INFO:2021-07-11 06:38:28,995:[training.py:328 -  train_and_validate() ] Training Epoch 9
+DEBUG:2021-07-11 06:38:29,004:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 06:38:29,378:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 06:38:29,714:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 06:38:30,089:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 06:38:30,450:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 06:38:30,896:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 06:38:31,239:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 06:38:31,594:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 06:38:32,040:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 06:38:32,501:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 06:38:32,851:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 06:38:32,853:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 06:38:32,927:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 06:38:32,929:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 06:38:32,938:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 06:38:32,962:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 06:38:32,978:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 06:38:33,002:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 06:38:33,031:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 06:38:33,092:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 06:38:33,169:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 06:38:33,177:[generators.py:744 -                 gen() ] train Batch generation for epoch 8 started
+DEBUG:2021-07-11 06:40:40,143:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:40,168:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:40,251:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:40,276:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:41,286:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:41,324:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:41,877:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:41,908:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:42,107:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:42,123:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:42,175:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:42,203:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:42,442:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:42,456:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:43,315:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:43,334:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:43,974:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:44,001:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 06:40:44,678:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 06:40:44,697:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 07:16:11,138:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 07:16:11,173:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 07:16:11,173:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 07:16:11,174:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 07:16:11,174:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 07:16:11,175:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 07:16:11,175:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 07:16:11,176:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 07:16:11,176:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 07:16:11,177:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 07:16:11,177:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 07:16:11,178:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 07:16:11,178:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 07:16:11,179:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 07:16:11,179:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 07:16:11,179:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 07:16:11,180:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 07:16:11,180:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 07:16:11,181:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 07:16:11,181:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 07:16:11,181:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 07:16:11,182:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 07:16:11,182:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 07:16:11,183:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 07:16:11,183:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 07:16:11,183:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 07:16:11,184:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 07:16:11,184:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 07:16:11,185:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 07:16:11,185:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 07:16:11,186:[generators.py:768 -                 gen() ] train Finished join for epoch 8
+DEBUG:2021-07-11 07:16:11,186:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 07:16:11,380:[training.py:352 -  train_and_validate() ] Validation Epoch 9
+DEBUG:2021-07-11 07:16:11,386:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 07:16:11,783:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 07:16:12,135:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 07:16:12,476:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 07:16:12,853:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 07:16:13,229:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 07:16:13,627:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 07:16:14,003:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 07:16:14,367:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 07:16:14,724:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 07:16:15,172:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 07:16:15,173:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 07:16:15,176:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 07:16:15,182:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 07:16:15,190:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 07:16:15,322:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 07:16:15,379:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 07:16:15,451:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 07:16:15,526:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 07:16:15,594:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 07:16:15,716:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 07:16:15,819:[generators.py:744 -                 gen() ] val Batch generation for epoch 8 started
+DEBUG:2021-07-11 07:16:24,470:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:24,493:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:24,775:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:24,789:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:25,526:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:25,556:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:25,590:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:25,612:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:25,928:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:25,944:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:26,425:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:26,442:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:26,698:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:26,710:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:26,923:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:26,945:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:27,734:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:27,758:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 07:16:28,892:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 07:16:28,906:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 07:17:38,713:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 07:17:38,715:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 07:17:38,715:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 07:17:38,716:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 07:17:38,716:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 07:17:38,717:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 07:17:38,717:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 07:17:38,718:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 07:17:38,718:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 07:17:38,718:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 07:17:38,719:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 07:17:38,719:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 07:17:38,720:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 07:17:38,720:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 07:17:38,720:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 07:17:38,721:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 07:17:38,721:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 07:17:38,721:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 07:17:38,722:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 07:17:38,722:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 07:17:38,723:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 07:17:38,723:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 07:17:38,723:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 07:17:38,724:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 07:17:38,724:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 07:17:38,725:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 07:17:38,725:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 07:17:38,726:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 07:17:38,726:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 07:17:38,726:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 07:17:38,727:[generators.py:768 -                 gen() ] val Finished join for epoch 8
+DEBUG:2021-07-11 07:17:38,727:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 07:17:38,935:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000125, Stop Training - False
+INFO:2021-07-11 07:17:38,936:[training.py:328 -  train_and_validate() ] Training Epoch 10
+DEBUG:2021-07-11 07:17:38,943:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 07:17:39,275:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 07:17:39,574:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 07:17:39,866:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 07:17:40,175:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 07:17:40,505:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 07:17:40,846:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 07:17:41,182:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 07:17:41,502:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 07:17:41,851:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 07:17:42,164:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 07:17:42,165:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 07:17:42,169:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 07:17:42,252:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 07:17:42,267:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 07:17:42,305:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 07:17:42,336:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 07:17:42,342:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 07:17:42,345:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 07:17:42,416:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 07:17:42,523:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 07:17:42,594:[generators.py:744 -                 gen() ] train Batch generation for epoch 9 started
+DEBUG:2021-07-11 07:19:49,739:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:49,760:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:50,104:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:50,118:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:50,415:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:50,432:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:50,572:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:50,596:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:50,673:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:50,691:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:51,030:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:51,052:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:51,266:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:51,303:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:51,563:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:51,580:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:52,810:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:52,827:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 07:19:52,909:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 07:19:52,923:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 07:55:21,647:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 07:55:21,667:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 07:55:21,668:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 07:55:21,668:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 07:55:21,668:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 07:55:21,669:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 07:55:21,669:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 07:55:21,670:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 07:55:21,671:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 07:55:21,671:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 07:55:21,672:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 07:55:21,672:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 07:55:21,672:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 07:55:21,673:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 07:55:21,673:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 07:55:21,674:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 07:55:21,674:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 07:55:21,674:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 07:55:21,675:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 07:55:21,675:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 07:55:21,676:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 07:55:21,676:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 07:55:21,677:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 07:55:21,677:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 07:55:21,677:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 07:55:21,678:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 07:55:21,678:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 07:55:21,679:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 07:55:21,679:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 07:55:21,679:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 07:55:21,680:[generators.py:768 -                 gen() ] train Finished join for epoch 9
+DEBUG:2021-07-11 07:55:21,680:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 07:55:21,887:[training.py:352 -  train_and_validate() ] Validation Epoch 10
+DEBUG:2021-07-11 07:55:21,893:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 07:55:22,285:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 07:55:22,655:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 07:55:23,017:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 07:55:23,410:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 07:55:23,771:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 07:55:24,178:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 07:55:24,568:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 07:55:25,068:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 07:55:25,541:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 07:55:25,987:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 07:55:25,988:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 07:55:25,990:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 07:55:25,996:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 07:55:26,063:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 07:55:26,122:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 07:55:26,173:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 07:55:26,247:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 07:55:26,307:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 07:55:26,414:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 07:55:26,540:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 07:55:26,590:[generators.py:744 -                 gen() ] val Batch generation for epoch 9 started
+DEBUG:2021-07-11 07:55:34,894:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:34,937:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:35,580:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:35,594:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:35,803:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:35,826:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:36,185:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:36,213:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:36,642:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:36,666:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:37,097:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:37,117:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:37,275:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:37,300:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:37,940:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:37,958:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:37,983:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:38,000:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 07:55:39,107:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 07:55:39,157:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 07:56:49,753:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 07:56:49,754:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 07:56:49,754:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 07:56:49,755:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 07:56:49,755:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 07:56:49,756:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 07:56:49,756:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 07:56:49,756:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 07:56:49,757:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 07:56:49,757:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 07:56:49,757:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 07:56:49,758:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 07:56:49,758:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 07:56:49,759:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 07:56:49,759:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 07:56:49,759:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 07:56:49,760:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 07:56:49,760:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 07:56:49,760:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 07:56:49,761:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 07:56:49,761:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 07:56:49,761:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 07:56:49,762:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 07:56:49,762:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 07:56:49,762:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 07:56:49,763:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 07:56:49,763:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 07:56:49,764:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 07:56:49,764:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 07:56:49,764:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 07:56:49,765:[generators.py:768 -                 gen() ] val Finished join for epoch 9
+DEBUG:2021-07-11 07:56:49,765:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 07:56:49,988:[training.py:407 -  train_and_validate() ] Current learning rate - 0.000125, Stop Training - False
+INFO:2021-07-11 07:56:49,989:[training.py:328 -  train_and_validate() ] Training Epoch 11
+DEBUG:2021-07-11 07:56:49,997:[generators.py:670 -          _epoch_run() ] train spawning process 0, df size (60416, 2), sum(num_batches) 944
+DEBUG:2021-07-11 07:56:50,317:[generators.py:670 -          _epoch_run() ] train spawning process 1, df size (60416, 2), sum(num_batches) 1888
+DEBUG:2021-07-11 07:56:50,589:[generators.py:670 -          _epoch_run() ] train spawning process 2, df size (60416, 2), sum(num_batches) 2832
+DEBUG:2021-07-11 07:56:50,883:[generators.py:670 -          _epoch_run() ] train spawning process 3, df size (60416, 2), sum(num_batches) 3776
+DEBUG:2021-07-11 07:56:51,154:[generators.py:670 -          _epoch_run() ] train spawning process 4, df size (60416, 2), sum(num_batches) 4720
+DEBUG:2021-07-11 07:56:51,424:[generators.py:670 -          _epoch_run() ] train spawning process 5, df size (60416, 2), sum(num_batches) 5664
+DEBUG:2021-07-11 07:56:51,692:[generators.py:670 -          _epoch_run() ] train spawning process 6, df size (60416, 2), sum(num_batches) 6608
+DEBUG:2021-07-11 07:56:51,965:[generators.py:670 -          _epoch_run() ] train spawning process 7, df size (60416, 2), sum(num_batches) 7552
+DEBUG:2021-07-11 07:56:52,284:[generators.py:670 -          _epoch_run() ] train spawning process 8, df size (60416, 2), sum(num_batches) 8496
+DEBUG:2021-07-11 07:56:52,593:[generators.py:670 -          _epoch_run() ] train spawning process 9, df size (60416, 2), sum(num_batches) 9440
+DEBUG:2021-07-11 07:56:52,864:[generators.py:696 -          _epoch_run() ] train num_batches list [944, 944, 944, 944, 944, 944, 944, 944, 944, 944]
+DEBUG:2021-07-11 07:56:52,865:[generators.py:708 -          _epoch_run() ] train starting stealer thread 0 [944] 
+DEBUG:2021-07-11 07:56:52,867:[generators.py:708 -          _epoch_run() ] train starting stealer thread 1 [944] 
+DEBUG:2021-07-11 07:56:52,891:[generators.py:708 -          _epoch_run() ] train starting stealer thread 2 [944] 
+DEBUG:2021-07-11 07:56:52,911:[generators.py:708 -          _epoch_run() ] train starting stealer thread 3 [944] 
+DEBUG:2021-07-11 07:56:52,935:[generators.py:708 -          _epoch_run() ] train starting stealer thread 4 [944] 
+DEBUG:2021-07-11 07:56:52,942:[generators.py:708 -          _epoch_run() ] train starting stealer thread 5 [944] 
+DEBUG:2021-07-11 07:56:53,051:[generators.py:708 -          _epoch_run() ] train starting stealer thread 6 [944] 
+DEBUG:2021-07-11 07:56:53,056:[generators.py:708 -          _epoch_run() ] train starting stealer thread 7 [944] 
+DEBUG:2021-07-11 07:56:53,198:[generators.py:708 -          _epoch_run() ] train starting stealer thread 8 [944] 
+DEBUG:2021-07-11 07:56:53,231:[generators.py:708 -          _epoch_run() ] train starting stealer thread 9 [944] 
+DEBUG:2021-07-11 07:56:53,283:[generators.py:744 -                 gen() ] train Batch generation for epoch 10 started
+DEBUG:2021-07-11 07:59:03,495:[generators.py:592 -        _proc_target() ] train process 0 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:03,506:[generators.py:615 -            _stealer() ] train stealer thread 0 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:03,808:[generators.py:592 -        _proc_target() ] train process 3 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:03,824:[generators.py:615 -            _stealer() ] train stealer thread 3 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:04,149:[generators.py:592 -        _proc_target() ] train process 1 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:04,167:[generators.py:615 -            _stealer() ] train stealer thread 1 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:04,591:[generators.py:592 -        _proc_target() ] train process 2 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:04,606:[generators.py:615 -            _stealer() ] train stealer thread 2 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:04,930:[generators.py:592 -        _proc_target() ] train process 7 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:04,953:[generators.py:615 -            _stealer() ] train stealer thread 7 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:05,191:[generators.py:592 -        _proc_target() ] train process 6 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:05,207:[generators.py:615 -            _stealer() ] train stealer thread 6 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:05,238:[generators.py:592 -        _proc_target() ] train process 5 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:05,256:[generators.py:615 -            _stealer() ] train stealer thread 5 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:05,258:[generators.py:592 -        _proc_target() ] train process 4 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:05,274:[generators.py:615 -            _stealer() ] train stealer thread 4 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:06,220:[generators.py:592 -        _proc_target() ] train process 8 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:06,239:[generators.py:615 -            _stealer() ] train stealer thread 8 got 944 batches from mpq
+DEBUG:2021-07-11 07:59:06,474:[generators.py:592 -        _proc_target() ] train process 9 put 944 batches into mpq
+DEBUG:2021-07-11 07:59:06,496:[generators.py:615 -            _stealer() ] train stealer thread 9 got 944 batches from mpq
+DEBUG:2021-07-11 08:34:25,948:[generators.py:756 -                 gen() ] train waiting to join process 0
+DEBUG:2021-07-11 08:34:25,978:[generators.py:761 -                 gen() ] train waiting to join thread 0
+DEBUG:2021-07-11 08:34:25,978:[generators.py:765 -                 gen() ] train join complete for process 0
+DEBUG:2021-07-11 08:34:25,979:[generators.py:756 -                 gen() ] train waiting to join process 1
+DEBUG:2021-07-11 08:34:25,979:[generators.py:761 -                 gen() ] train waiting to join thread 1
+DEBUG:2021-07-11 08:34:25,980:[generators.py:765 -                 gen() ] train join complete for process 1
+DEBUG:2021-07-11 08:34:25,980:[generators.py:756 -                 gen() ] train waiting to join process 2
+DEBUG:2021-07-11 08:34:25,980:[generators.py:761 -                 gen() ] train waiting to join thread 2
+DEBUG:2021-07-11 08:34:25,981:[generators.py:765 -                 gen() ] train join complete for process 2
+DEBUG:2021-07-11 08:34:25,981:[generators.py:756 -                 gen() ] train waiting to join process 3
+DEBUG:2021-07-11 08:34:25,981:[generators.py:761 -                 gen() ] train waiting to join thread 3
+DEBUG:2021-07-11 08:34:25,982:[generators.py:765 -                 gen() ] train join complete for process 3
+DEBUG:2021-07-11 08:34:25,982:[generators.py:756 -                 gen() ] train waiting to join process 4
+DEBUG:2021-07-11 08:34:25,982:[generators.py:761 -                 gen() ] train waiting to join thread 4
+DEBUG:2021-07-11 08:34:25,983:[generators.py:765 -                 gen() ] train join complete for process 4
+DEBUG:2021-07-11 08:34:25,983:[generators.py:756 -                 gen() ] train waiting to join process 5
+DEBUG:2021-07-11 08:34:25,983:[generators.py:761 -                 gen() ] train waiting to join thread 5
+DEBUG:2021-07-11 08:34:25,984:[generators.py:765 -                 gen() ] train join complete for process 5
+DEBUG:2021-07-11 08:34:25,984:[generators.py:756 -                 gen() ] train waiting to join process 6
+DEBUG:2021-07-11 08:34:25,985:[generators.py:761 -                 gen() ] train waiting to join thread 6
+DEBUG:2021-07-11 08:34:25,985:[generators.py:765 -                 gen() ] train join complete for process 6
+DEBUG:2021-07-11 08:34:25,985:[generators.py:756 -                 gen() ] train waiting to join process 7
+DEBUG:2021-07-11 08:34:25,986:[generators.py:761 -                 gen() ] train waiting to join thread 7
+DEBUG:2021-07-11 08:34:25,986:[generators.py:765 -                 gen() ] train join complete for process 7
+DEBUG:2021-07-11 08:34:25,986:[generators.py:756 -                 gen() ] train waiting to join process 8
+DEBUG:2021-07-11 08:34:25,987:[generators.py:761 -                 gen() ] train waiting to join thread 8
+DEBUG:2021-07-11 08:34:25,987:[generators.py:765 -                 gen() ] train join complete for process 8
+DEBUG:2021-07-11 08:34:25,988:[generators.py:756 -                 gen() ] train waiting to join process 9
+DEBUG:2021-07-11 08:34:25,988:[generators.py:761 -                 gen() ] train waiting to join thread 9
+DEBUG:2021-07-11 08:34:25,988:[generators.py:765 -                 gen() ] train join complete for process 9
+DEBUG:2021-07-11 08:34:25,989:[generators.py:768 -                 gen() ] train Finished join for epoch 10
+DEBUG:2021-07-11 08:34:25,989:[generators.py:770 -                 gen() ] train Ready for next epoch
+INFO:2021-07-11 08:34:26,188:[training.py:352 -  train_and_validate() ] Validation Epoch 11
+DEBUG:2021-07-11 08:34:26,198:[generators.py:670 -          _epoch_run() ] val spawning process 0, df size (6784, 2), sum(num_batches) 106
+DEBUG:2021-07-11 08:34:26,579:[generators.py:670 -          _epoch_run() ] val spawning process 1, df size (6784, 2), sum(num_batches) 212
+DEBUG:2021-07-11 08:34:26,969:[generators.py:670 -          _epoch_run() ] val spawning process 2, df size (6784, 2), sum(num_batches) 318
+DEBUG:2021-07-11 08:34:27,339:[generators.py:670 -          _epoch_run() ] val spawning process 3, df size (6784, 2), sum(num_batches) 424
+DEBUG:2021-07-11 08:34:27,709:[generators.py:670 -          _epoch_run() ] val spawning process 4, df size (6784, 2), sum(num_batches) 530
+DEBUG:2021-07-11 08:34:28,095:[generators.py:670 -          _epoch_run() ] val spawning process 5, df size (6784, 2), sum(num_batches) 636
+DEBUG:2021-07-11 08:34:28,495:[generators.py:670 -          _epoch_run() ] val spawning process 6, df size (6784, 2), sum(num_batches) 742
+DEBUG:2021-07-11 08:34:28,911:[generators.py:670 -          _epoch_run() ] val spawning process 7, df size (6784, 2), sum(num_batches) 848
+DEBUG:2021-07-11 08:34:29,281:[generators.py:670 -          _epoch_run() ] val spawning process 8, df size (6784, 2), sum(num_batches) 954
+DEBUG:2021-07-11 08:34:29,642:[generators.py:670 -          _epoch_run() ] val spawning process 9, df size (6784, 2), sum(num_batches) 1060
+DEBUG:2021-07-11 08:34:30,138:[generators.py:696 -          _epoch_run() ] val num_batches list [106, 106, 106, 106, 106, 106, 106, 106, 106, 106]
+DEBUG:2021-07-11 08:34:30,139:[generators.py:708 -          _epoch_run() ] val starting stealer thread 0 [106] 
+DEBUG:2021-07-11 08:34:30,142:[generators.py:708 -          _epoch_run() ] val starting stealer thread 1 [106] 
+DEBUG:2021-07-11 08:34:30,145:[generators.py:708 -          _epoch_run() ] val starting stealer thread 2 [106] 
+DEBUG:2021-07-11 08:34:30,207:[generators.py:708 -          _epoch_run() ] val starting stealer thread 3 [106] 
+DEBUG:2021-07-11 08:34:30,212:[generators.py:708 -          _epoch_run() ] val starting stealer thread 4 [106] 
+DEBUG:2021-07-11 08:34:30,310:[generators.py:708 -          _epoch_run() ] val starting stealer thread 5 [106] 
+DEBUG:2021-07-11 08:34:30,311:[generators.py:708 -          _epoch_run() ] val starting stealer thread 6 [106] 
+DEBUG:2021-07-11 08:34:30,432:[generators.py:708 -          _epoch_run() ] val starting stealer thread 7 [106] 
+DEBUG:2021-07-11 08:34:30,469:[generators.py:708 -          _epoch_run() ] val starting stealer thread 8 [106] 
+DEBUG:2021-07-11 08:34:30,597:[generators.py:708 -          _epoch_run() ] val starting stealer thread 9 [106] 
+DEBUG:2021-07-11 08:34:30,633:[generators.py:744 -                 gen() ] val Batch generation for epoch 10 started
+DEBUG:2021-07-11 08:34:39,900:[generators.py:592 -        _proc_target() ] val process 0 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:39,924:[generators.py:615 -            _stealer() ] val stealer thread 0 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:40,679:[generators.py:592 -        _proc_target() ] val process 1 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:40,696:[generators.py:615 -            _stealer() ] val stealer thread 1 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:40,774:[generators.py:592 -        _proc_target() ] val process 2 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:40,806:[generators.py:615 -            _stealer() ] val stealer thread 2 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:40,985:[generators.py:592 -        _proc_target() ] val process 3 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:41,000:[generators.py:615 -            _stealer() ] val stealer thread 3 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:41,656:[generators.py:592 -        _proc_target() ] val process 5 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:41,671:[generators.py:615 -            _stealer() ] val stealer thread 5 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:41,680:[generators.py:592 -        _proc_target() ] val process 4 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:41,706:[generators.py:615 -            _stealer() ] val stealer thread 4 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:42,179:[generators.py:592 -        _proc_target() ] val process 6 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:42,195:[generators.py:615 -            _stealer() ] val stealer thread 6 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:42,367:[generators.py:592 -        _proc_target() ] val process 7 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:42,393:[generators.py:615 -            _stealer() ] val stealer thread 7 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:42,749:[generators.py:592 -        _proc_target() ] val process 8 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:42,843:[generators.py:615 -            _stealer() ] val stealer thread 8 got 106 batches from mpq
+DEBUG:2021-07-11 08:34:43,321:[generators.py:592 -        _proc_target() ] val process 9 put 106 batches into mpq
+DEBUG:2021-07-11 08:34:43,334:[generators.py:615 -            _stealer() ] val stealer thread 9 got 106 batches from mpq
+DEBUG:2021-07-11 08:35:53,634:[generators.py:756 -                 gen() ] val waiting to join process 0
+DEBUG:2021-07-11 08:35:53,636:[generators.py:761 -                 gen() ] val waiting to join thread 0
+DEBUG:2021-07-11 08:35:53,637:[generators.py:765 -                 gen() ] val join complete for process 0
+DEBUG:2021-07-11 08:35:53,637:[generators.py:756 -                 gen() ] val waiting to join process 1
+DEBUG:2021-07-11 08:35:53,638:[generators.py:761 -                 gen() ] val waiting to join thread 1
+DEBUG:2021-07-11 08:35:53,639:[generators.py:765 -                 gen() ] val join complete for process 1
+DEBUG:2021-07-11 08:35:53,639:[generators.py:756 -                 gen() ] val waiting to join process 2
+DEBUG:2021-07-11 08:35:53,640:[generators.py:761 -                 gen() ] val waiting to join thread 2
+DEBUG:2021-07-11 08:35:53,640:[generators.py:765 -                 gen() ] val join complete for process 2
+DEBUG:2021-07-11 08:35:53,640:[generators.py:756 -                 gen() ] val waiting to join process 3
+DEBUG:2021-07-11 08:35:53,641:[generators.py:761 -                 gen() ] val waiting to join thread 3
+DEBUG:2021-07-11 08:35:53,641:[generators.py:765 -                 gen() ] val join complete for process 3
+DEBUG:2021-07-11 08:35:53,642:[generators.py:756 -                 gen() ] val waiting to join process 4
+DEBUG:2021-07-11 08:35:53,642:[generators.py:761 -                 gen() ] val waiting to join thread 4
+DEBUG:2021-07-11 08:35:53,643:[generators.py:765 -                 gen() ] val join complete for process 4
+DEBUG:2021-07-11 08:35:53,643:[generators.py:756 -                 gen() ] val waiting to join process 5
+DEBUG:2021-07-11 08:35:53,643:[generators.py:761 -                 gen() ] val waiting to join thread 5
+DEBUG:2021-07-11 08:35:53,644:[generators.py:765 -                 gen() ] val join complete for process 5
+DEBUG:2021-07-11 08:35:53,644:[generators.py:756 -                 gen() ] val waiting to join process 6
+DEBUG:2021-07-11 08:35:53,645:[generators.py:761 -                 gen() ] val waiting to join thread 6
+DEBUG:2021-07-11 08:35:53,645:[generators.py:765 -                 gen() ] val join complete for process 6
+DEBUG:2021-07-11 08:35:53,645:[generators.py:756 -                 gen() ] val waiting to join process 7
+DEBUG:2021-07-11 08:35:53,646:[generators.py:761 -                 gen() ] val waiting to join thread 7
+DEBUG:2021-07-11 08:35:53,646:[generators.py:765 -                 gen() ] val join complete for process 7
+DEBUG:2021-07-11 08:35:53,647:[generators.py:756 -                 gen() ] val waiting to join process 8
+DEBUG:2021-07-11 08:35:53,647:[generators.py:761 -                 gen() ] val waiting to join thread 8
+DEBUG:2021-07-11 08:35:53,648:[generators.py:765 -                 gen() ] val join complete for process 8
+DEBUG:2021-07-11 08:35:53,648:[generators.py:756 -                 gen() ] val waiting to join process 9
+DEBUG:2021-07-11 08:35:53,648:[generators.py:761 -                 gen() ] val waiting to join thread 9
+DEBUG:2021-07-11 08:35:53,649:[generators.py:765 -                 gen() ] val join complete for process 9
+DEBUG:2021-07-11 08:35:53,649:[generators.py:768 -                 gen() ] val Finished join for epoch 10
+DEBUG:2021-07-11 08:35:53,650:[generators.py:770 -                 gen() ] val Ready for next epoch
+INFO:2021-07-11 08:35:53,723:[training.py:389 -  train_and_validate() ] Restoring best weights from epoch 6
+INFO:2021-07-11 08:35:53,738:[training.py:411 -  train_and_validate() ] Total Elapsed Time: 25781.41142654419
+INFO:2021-07-11 08:35:53,959:[training.py:433 -  train_and_validate() ] Finished saving model: /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001.05_split000.h5
+INFO:2021-07-11 08:35:53,992:[training.py:447 -  train_and_validate() ] Finished saving training and validation history: /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001.05_split000.history.json
