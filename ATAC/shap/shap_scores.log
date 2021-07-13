@@ -1,0 +1,37 @@
+INFO:2021-07-12 23:54:44,158:[variant_shap_scores.py:381 -    shap_scores_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+DEBUG:2021-07-12 23:54:44,215:[attrs.py:77 -         __getitem__() ] Creating converter from 3 to 5
+INFO:2021-07-12 23:54:46,386:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-12 23:54:46,392:[variant_shap_scores.py:125 -         shap_scores() ] #Peaks - 2
+INFO:2021-07-12 23:54:46,392:[variant_shap_scores.py:128 -         shap_scores() ] Opening reference file ...
+INFO:2021-07-12 23:54:46,403:[variant_shap_scores.py:145 -         shap_scores() ] Opening control bigWigs ...
+WARNING:2021-07-12 23:54:46,408:[variant_shap_scores.py:205 -         shap_scores() ] Reference genome doesn't have required sequence length (2114) at peak: chr11 86102931-86105045. Returned length 2115. Using all N's.
+WARNING:2021-07-12 23:54:46,409:[variant_shap_scores.py:205 -         shap_scores() ] Reference genome doesn't have required sequence length (2114) at peak: chr11 86102931-86105045. Returned length 2115. Using all N's.
+INFO:2021-07-12 23:54:48,929:[variant_shap_scores.py:285 -         shap_scores() ] Generating 'counts' shap scores
+INFO:2021-07-12 23:54:58,439:[variant_shap_scores.py:290 -         shap_scores() ] Saving 'counts' scores
+DEBUG:2021-07-12 23:54:58,446:[dataset.py:945 -         __setitem__() ] Creating converter from 5 to 3
+INFO:2021-07-12 23:54:58,455:[variant_shap_scores.py:297 -         shap_scores() ] Generating 'profile' shap scores
+INFO:2021-07-12 23:55:10,102:[variant_shap_scores.py:302 -         shap_scores() ] Saving 'profile' scores
+INFO:2021-07-13 00:06:03,573:[variant_shap_scores.py:382 -    shap_scores_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+DEBUG:2021-07-13 00:06:03,593:[attrs.py:77 -         __getitem__() ] Creating converter from 3 to 5
+INFO:2021-07-13 00:06:05,684:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-13 00:06:05,690:[variant_shap_scores.py:126 -         shap_scores() ] #Peaks - 2
+INFO:2021-07-13 00:06:05,691:[variant_shap_scores.py:129 -         shap_scores() ] Opening reference file ...
+INFO:2021-07-13 00:06:05,697:[variant_shap_scores.py:146 -         shap_scores() ] Opening control bigWigs ...
+WARNING:2021-07-13 00:06:05,701:[variant_shap_scores.py:206 -         shap_scores() ] Reference genome doesn't have required sequence length (2114) at peak: chr11 86102931-86105045. Returned length 2115. Using all N's.
+WARNING:2021-07-13 00:06:05,702:[variant_shap_scores.py:206 -         shap_scores() ] Reference genome doesn't have required sequence length (2114) at peak: chr11 86102931-86105045. Returned length 2115. Using all N's.
+INFO:2021-07-13 00:06:08,788:[variant_shap_scores.py:286 -         shap_scores() ] Generating 'counts' shap scores
+INFO:2021-07-13 00:06:18,957:[variant_shap_scores.py:291 -         shap_scores() ] Saving 'counts' scores
+DEBUG:2021-07-13 00:06:18,967:[dataset.py:945 -         __setitem__() ] Creating converter from 5 to 3
+INFO:2021-07-13 00:06:18,979:[variant_shap_scores.py:298 -         shap_scores() ] Generating 'profile' shap scores
+INFO:2021-07-13 00:06:31,014:[variant_shap_scores.py:303 -         shap_scores() ] Saving 'profile' scores
+INFO:2021-07-13 00:12:06,812:[variant_shap_scores.py:383 -    shap_scores_main() ] Loading /wynton/home/corces/allan/BPMVF/ATAC/model/bpnet-hint.256.100.001_split000.h5
+DEBUG:2021-07-13 00:12:06,837:[attrs.py:77 -         __getitem__() ] Creating converter from 3 to 5
+INFO:2021-07-13 00:12:08,889:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-13 00:12:08,895:[variant_shap_scores.py:126 -         shap_scores() ] #Peaks - 2
+INFO:2021-07-13 00:12:08,896:[variant_shap_scores.py:129 -         shap_scores() ] Opening reference file ...
+INFO:2021-07-13 00:12:08,902:[variant_shap_scores.py:146 -         shap_scores() ] Opening control bigWigs ...
+INFO:2021-07-13 00:12:12,020:[variant_shap_scores.py:287 -         shap_scores() ] Generating 'counts' shap scores
+INFO:2021-07-13 00:12:21,749:[variant_shap_scores.py:292 -         shap_scores() ] Saving 'counts' scores
+DEBUG:2021-07-13 00:12:21,756:[dataset.py:945 -         __setitem__() ] Creating converter from 5 to 3
+INFO:2021-07-13 00:12:21,764:[variant_shap_scores.py:299 -         shap_scores() ] Generating 'profile' shap scores
+INFO:2021-07-13 00:12:33,606:[variant_shap_scores.py:304 -         shap_scores() ] Saving 'profile' scores

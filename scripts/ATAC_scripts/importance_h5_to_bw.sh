@@ -20,6 +20,8 @@ INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
 # PEAKS_F=$PEAKS_DIR/Cluster24.idr.optimal.narrowPeak
 PEAKS_DIR=$BASE_DIR/HINT
 PEAKS_F=$PEAKS_DIR/C24_full.bed
+# PEAKS_DIR=$DATA_DIR/peaks
+# PEAKS_F=$PEAKS_DIR/Cluster24.idr.optimal.narrowPeak
 
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa

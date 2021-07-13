@@ -7,6 +7,7 @@ ENCSR000EGM/orig/shap/*
 ENCSR000EGM/shap/*
 ATAC/data/bams/*
 BPNet-ATAC-seq/*
+scripts/job_output/*
 
 ATAC/data/C24signal.bedGraph
 ATAC/data/C24signal.bw
