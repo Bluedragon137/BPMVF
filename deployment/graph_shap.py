@@ -19,13 +19,10 @@ def get_imp(scores, seqs, start, end):
     psT = vals[start:end, 3]
     return psA, psC, psG, psT
 
-def gen_graph(sA, sC, sG, sT, entry, startpos, trim_start, trim_end, chrom, isprofile):
+def gen_graph(sA, sC, sG, sT, entry, startpos, trim_start, trim_end, chrom):
     plt.switch_backend('Agg')
     ind = np.arange(startpos + trim_start, startpos + trim_end)
-    if isprofile:
-        plt.title("Profile Importance Scores")
-    else:
-        plt.title("Counts Importance Scores")
+    plt.title("Counts Importance Scores")
     s = "Bases on " + chrom.decode("utf-8")
     plt.xlabel(s)
     plt.ylabel("Scores (A=green/C=blue/G=yellow/T=red")
@@ -33,23 +30,40 @@ def gen_graph(sA, sC, sG, sT, entry, startpos, trim_start, trim_end, chrom, ispr
     plt.bar(ind, sC, color = '#1A17E1')
     plt.bar(ind, sG, color = '#D69824')
     plt.bar(ind, sT, color = '#D40603')
-    if isprofile:
-        plt.savefig('static/images/rsID_importances/ATACprofileimp' + str(entry) + '.png')
-    else:
-        plt.savefig('static/images/rsID_importances/ATACcountsimp' + str(entry) + '.png')
+    plt.savefig('static/images/rsID_importances/ATACcountsimp' + str(entry) + '.png')
+
+def gen_delta(counts_hdf5, profile_hdf5, startpos, trim_start, trim_end, chrom):
+    c_chrom, c_start, c_end, c_scores, c_seqs, p_chrom, p_start, p_end, p_scores, p_seqs = load_hdf5(counts_hdf5, profile_hdf5)
+    start, end = 1037, 1077
+    csA1, csC1, csG1, csT1 = get_imp(c_scores[0], c_seqs[0], start, end)
+    csA2, csC2, csG2, csT2 = get_imp(c_scores[1], c_seqs[1], start, end)
+    plt.switch_backend('Agg')
+    ind = np.arange(startpos + trim_start, startpos + trim_end)
+    plt.title("Delta Scores Graph")
+    s = "Bases on " + chrom.decode("utf-8")
+    plt.xlabel(s)
+    plt.ylabel("Scores (A=green/C=blue/G=yellow/T=red")
+    plt.bar(ind, csA1-csA2, color = '#4D7F1E')
+    plt.bar(ind, csC1-csC2, color = '#1A17E1')
+    plt.bar(ind, csG1-csG2, color = '#D69824')
+    plt.bar(ind, csT1-csT2, color = '#D40603')
+    plt.savefig('static/images/rsID_importances/DeltaGraph.png')
 
 def vis_shap(counts_hdf5, profile_hdf5, entry):
     c_chrom, c_start, c_end, c_scores, c_seqs, p_chrom, p_start, p_end, p_scores, p_seqs = load_hdf5(counts_hdf5, profile_hdf5)
     start, end = 1037, 1077
-    csA, csC, csG, csT = get_imp(c_scores[entry], c_seqs[entry], start, end)
-    psA, psC, psG, psT = get_imp(p_scores[entry], p_seqs[entry], start, end)
-    gen_graph(csA, csC, csG, csT, entry, c_start[entry], start, end, c_chrom[entry], False)
-    gen_graph(psA, psC, psG, psT, entry, p_start[entry], start, end, p_chrom[entry], True)
+    for ind in entry:
+        csA, csC, csG, csT = get_imp(c_scores[ind], c_seqs[ind], start, end)
+        psA, psC, psG, psT = get_imp(p_scores[ind], p_seqs[ind], start, end)
+        gen_graph(csA, csC, csG, csT, ind, c_start[ind], start, end, c_chrom[ind])
+    gen_delta(counts_hdf5, profile_hdf5, c_start[0], start, end, c_chrom[0])
+    #gen_graph(psA, psC, psG, psT, entry, p_start[entry], start, end, p_chrom[entry], True)
+    
+
 
 if __name__ == '__main__':
     # for i in range(20):
         #vis_shap('../ATAC/bpnet-hint256.100.001/shap/counts_scores.h5', '../ATAC/bpnet-hint256.100.001/shap/profile_scores.h5', i)
         #vis_shap('../ENCSR000EGM/shap/counts_scores.h5', '../ENCSR000EGM/shap/profile_scores.h5', 0)
-    vis_shap('../ATAC/shap/counts_scores.h5', '../ATAC/shap/profile_scores.h5', 0)
-    vis_shap('../ATAC/shap/counts_scores.h5', '../ATAC/shap/profile_scores.h5', 1)
+    vis_shap('../ATAC/shap/counts_scores.h5', '../ATAC/shap/profile_scores.h5', [0, 1])
 
