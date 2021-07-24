@@ -19,11 +19,13 @@ def get_GC_content(seq):
 
 def generate_main():
     fasta_ref = pysam.FastaFile('../reference/hg38.genome.fa')
-    chrom_sizes = pd.read_csv('chrom_sizes', sep='\t', header=None, names=['chrom', 'length'])
-    df = pd.DataFrame(columns=['chrom', 'startpos', 'endpos', 'gc'])
+    chrom_sizes = pd.read_csv('../reference/hg38.chrom.sizes', sep='\t', header=None, names=['chrom', 'length'])
+    data = {}
+    #df = pd.DataFrame(columns=['chrom', 'startpos', 'endpos', 'gc'])
 
     print("Data Loaded")
     start = time.time()
+    entry = 0
     for i in range(1,25):
         chr = 'chr'+str(i)
         if i == 23:
@@ -38,14 +40,17 @@ def generate_main():
                 continue
             else:
                 gc_content = get_GC_content(seq)
-                df = add_sequence(df, chr, counter, gc_content)
-            if (counter/1057)%1000 == 0:
+                #df = add_sequence(df, chr, counter, gc_content)
+                data[entry] = {"chrom": chr, "startpos": counter, "endpos": counter+2114, "gc": gc_content}
+                entry += 1
+            if (counter/1057)%10000 == 0:
                 print("completed: " + str(counter/1057))
         print(chr + "complete")
         end = time.time()
         print("Elapsed Time for This Chromosome: " + str(end-start))
         start = time.time()
-    df.to_csv('ranges_wynton.bed', sep='\t', encoding='utf-8', header=False, index=False)
+    df = pd.DataFrame.from_dict(data, "index")
+    df.to_csv('ranges.bed', sep='\t', encoding='utf-8', header=False, index=False)
 
 if __name__ == '__main__':
     generate_main()
