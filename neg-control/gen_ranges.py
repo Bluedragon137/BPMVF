@@ -17,7 +17,7 @@ def get_GC_content(seq):
             GC += 1
     return (GC / BP)*100
 
-def generate_main():
+def ranges_main(outputfp):
     fasta_ref = pysam.FastaFile('../reference/hg38.genome.fa')
     chrom_sizes = pd.read_csv('data/chrom_sizes', sep='\t', header=None, names=['chrom', 'length'])
     data = {}
@@ -50,7 +50,7 @@ def generate_main():
         print("Elapsed Time for This Chromosome: " + str(end-start))
         start = time.time()
     df = pd.DataFrame.from_dict(data, "index")
-    df.to_csv('ranges.bed', sep='\t', encoding='utf-8', header=False, index=False)
+    df.to_csv(outputfp, sep='\t', encoding='utf-8', header=False, index=False)
 
 if __name__ == '__main__':
-    generate_main()
+    ranges_main('ranges.bed')

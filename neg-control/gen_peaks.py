@@ -27,7 +27,7 @@ def query_gc(gc, data):
     data[str(gc)].pop(index)
     return val, data
 
-def save_peaks(origp, neg_sample_list):
+def save_peaks(origp, neg_sample_list, rate):
     negdf = pd.DataFrame(neg_sample_list, columns = ['chrom', 'st', 'en'])
     negdf['name'] = '.'
     negdf['score'] = 500
@@ -35,10 +35,11 @@ def save_peaks(origp, neg_sample_list):
     negdf['signalValue'] = 0
     negdf['p'] = 0
     negdf['q'] = 0
+    negdf['summit'] = 1057
     peaks_df = negdf.append(origp)
     peaks_df = peaks_df.sample(frac=1).reset_index(drop=True)
     print(peaks_df.info(), negdf.info(), origp.info())
-    peaks_df.to_csv('data/peaks_df.bed', sep='\t', encoding='utf-8', header=False, index=False)
+    peaks_df.to_csv('data/peaks_df_deduped'+str(rate)+'.bed', sep='\t', encoding='utf-8', header=False, index=False)
 
 def gen_peaks_main(origpeaks, negpeaks, rate):
     origp = pd.read_csv(origpeaks, sep='\t', header=None, \
@@ -62,8 +63,8 @@ def gen_peaks_main(origpeaks, negpeaks, rate):
             avg_gc = 0
     #print (neg_sample_list, len(neg_sample_list))
     print ('done processing neg_sample_list')
-    save_peaks(origp, neg_sample_list)
+    save_peaks(origp, neg_sample_list, rate)
 
 if __name__ == '__main__':
-    gen_peaks_main('../ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak', 'data/gc_peaks_dict.json', 0.1)
+    gen_peaks_main('../ATAC/data/peaks/Cluster24.filtered.deduped.bed', 'data/gc_peaks_dict.json', 0.1)
     
