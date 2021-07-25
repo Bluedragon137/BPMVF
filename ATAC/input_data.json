@@ -1,5 +1,5 @@
 {"task0": {"strand": 0,
     "task_id": 0,
     "signal": "/wynton/home/corces/allan/BPMVF/ATAC/data/Cluster24.bpnet.unstranded.bw",
-    "peaks": "/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.idr.optimal.narrowPeak"}
+    "peaks": "/wynton/home/corces/allan/BPMVF/ATAC/data/peaks/Cluster24.filtered.deduped.bed"}
 }

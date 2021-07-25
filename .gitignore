@@ -8,13 +8,17 @@ ENCSR000EGM/shap/*
 ATAC/data/bams/*
 BPNet-ATAC-seq/*
 scripts/job_output/*
+ATAC/HINT/*
 
 ATAC/data/C24signal.bedGraph
 ATAC/data/C24signal.bw
 ATAC/data/Cluster24.bpnet.unstranded.bw
 ATAC/shap/counts_scores.h5
 ATAC/shap/profile_scores.h5
-ATAC/bpnet256.15.001/shap/256.15.counts_scores.h5
-ATAC/bpnet256.15.001/shap/256.15.profile_scores.h5
-ATAC/bpnet256.100.001.01/shap/counts_scores.h5
-ATAC/bpnet256.100.001.01/shap/profile_scores.h5
+ATAC/iterations/bpnet256.15.001/shap/256.15.counts_scores.h5
+ATAC/iterations/bpnet256.15.001/shap/256.15.profile_scores.h5
+ATAC/iterations/bpnet256.100.001.01/shap/counts_scores.h5
+ATAC/iterations/bpnet256.100.001.01/shap/profile_scores.h5
+ATAC/iterations/bpnet-hint256.100.001/predictions/predicted_profile.bw
+ATAC/iterations/bpnet-hint256.100.001/shap/*
+ATAC/iterations/bpnet256.100.001.01/shap/*
