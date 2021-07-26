@@ -13,14 +13,14 @@ MODEL_DIR=$BASE_DIR/models
 INPUT_DATA=$BASE_DIR/input_data.json
 CV_SPLITS=$BASE_DIR/splits.json
 
-PEAKS_F=$DATA_DIR/peaks_df_deduped.bed
+PEAKS_F=$DATA_DIR/peaks_df_deduped0.20.bed
 INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
 
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
-MODEL_NAME=bpnet.10
+MODEL_NAME=bpnet.20
 FILTERS=256
 LEARNING_RATE=0.001
 COUNTS_LOSS_WEIGHT=300.29 #300.28898500099734 for Cluster 24

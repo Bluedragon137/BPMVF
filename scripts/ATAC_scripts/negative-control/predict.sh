@@ -9,7 +9,7 @@
 BASE_DIR=/wynton/home/corces/allan/BPMVF/neg-control
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/models
-PREDICTIONS_DIR=$BASE_DIR/predictions 
+PREDICTIONS_DIR=$BASE_DIR/model.05/predictions 
 INPUT_DATA=$BASE_DIR/input_data.json
 
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
@@ -21,7 +21,7 @@ OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/bpnet.10_split000.h5 \
+    --model $MODEL_DIR/bpnet.05_split000.h5 \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \

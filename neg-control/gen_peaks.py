@@ -18,9 +18,9 @@ def get_GC_content(seq):
 
 def query_gc(gc, data):
     terms = len(data[str(gc)])
-    if terms == 0 and terms >= 50:
+    if terms == 0 and gc >= 50:
         return query_gc(gc-1, data)
-    elif terms == 0 and terms < 50:
+    elif terms == 0 and gc < 50:
         return query_gc(gc+1, data)
     index = randrange(terms)
     val = data[str(gc)][index]
@@ -66,5 +66,5 @@ def gen_peaks_main(origpeaks, negpeaks, rate):
     save_peaks(origp, neg_sample_list, rate)
 
 if __name__ == '__main__':
-    gen_peaks_main('../ATAC/data/peaks/Cluster24.filtered.deduped.bed', 'data/gc_peaks_dict.json', 0.1)
+    gen_peaks_main('../ATAC/data/peaks/Cluster24.filtered.deduped.bed', 'data/gc_peaks_dict.json', 0.50)
     
