@@ -8,16 +8,14 @@ BOUNDS_DIR=$BASE_DIR/bounds
 METRICS_DIR=$BASE_DIR/metrics
 
 INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
-# PEAKS_DIR=$DATA_DIR/peaks
-# PEAKS_F=$PEAKS_DIR/Cluster24.idr.optimal.narrowPeak
-PEAKS_DIR=$BASE_DIR/HINT
-PEAKS_F=$PEAKS_DIR/C24_full.bed
+PEAKS_DIR=$DATA_DIR/peaks
+PEAKS_F=$PEAKS_DIR/Cluster24.filtered.deduped.bed
 
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
 
-LOGITS_FILE=$PREDICTIONS_DIR/'bpnet-hint_task0.bw'
-COUNTS_FILE=$PREDICTIONS_DIR/'bpnet-hint_task0_exponentiated_counts.bw'
+LOGITS_FILE=$PREDICTIONS_DIR/'bpnet-def_task0.bw'
+COUNTS_FILE=$PREDICTIONS_DIR/'bpnet-def_task0_exponentiated_counts.bw'
 
 mkdir -p $BOUNDS_DIR
 bounds \

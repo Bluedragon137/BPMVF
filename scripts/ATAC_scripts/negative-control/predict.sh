@@ -9,7 +9,7 @@
 BASE_DIR=/wynton/home/corces/allan/BPMVF/neg-control
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/models
-PREDICTIONS_DIR=$BASE_DIR/model.05/predictions 
+PREDICTIONS_DIR=$BASE_DIR/model.05/predictions20
 INPUT_DATA=$BASE_DIR/input_data.json
 
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE_DIR=/wynton/home/corces/allan/BPMVF/neg-control
-SUB_DIR=$BASE_DIR/model.05
+SUB_DIR=$BASE_DIR/model.00
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 PREDICTIONS_DIR=$SUB_DIR/predictions
 DATA_DIR=$BASE_DIR/data
@@ -9,7 +9,7 @@ BOUNDS_DIR=$SUB_DIR/bounds
 METRICS_DIR=$SUB_DIR/metrics
 
 INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
-PEAKS_F=$DATA_DIR/peaks_df_deduped0.05.bed
+PEAKS_F=$DATA_DIR/peaks_df_deduped0.20.bed
 
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa

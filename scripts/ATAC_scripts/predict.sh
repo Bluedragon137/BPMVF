@@ -10,7 +10,7 @@ BASE_DIR=/wynton/home/corces/allan/BPMVF/ATAC
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/model
 PREDICTIONS_DIR=$BASE_DIR/predictions 
-INPUT_DATA=$BASE_DIR/input_data_hint.json
+INPUT_DATA=$BASE_DIR/input_data.json
 
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
@@ -21,7 +21,7 @@ OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/bpnet-hint.256.100.001_split000.h5 \
+    --model $MODEL_DIR/bpnet-def.03_split000.h5 \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \
