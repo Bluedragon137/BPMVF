@@ -1,0 +1,12 @@
+INFO:2021-07-26 15:09:56,404:[metrics.py:203 -        metrics_main() ] Loading lower and upper bounds ...
+INFO:2021-07-26 15:09:56,604:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-26 15:10:36,537:[metrics.py:465 -        metrics_main() ] 		min		max		median
+INFO:2021-07-26 15:10:36,538:[metrics.py:468 -        metrics_main() ] mnll		0.000		1.000		0.576
+INFO:2021-07-26 15:10:36,539:[metrics.py:470 -        metrics_main() ] cross_entropy	0.000		1.000		0.573
+INFO:2021-07-26 15:10:36,540:[metrics.py:472 -        metrics_main() ] jsd		0.000		1.000		0.782
+INFO:2021-07-26 15:10:36,540:[metrics.py:474 -        metrics_main() ] pearson		0.000		0.876		0.612
+INFO:2021-07-26 15:10:36,541:[metrics.py:476 -        metrics_main() ] spearman	0.000		0.830		0.467
+INFO:2021-07-26 15:10:36,541:[metrics.py:478 -        metrics_main() ] mse		0.000		129.995		0.485
+INFO:2021-07-26 15:10:36,542:[metrics.py:479 -        metrics_main() ] ==============================================
+INFO:2021-07-26 15:10:36,542:[metrics.py:480 -        metrics_main() ] counts pearson: 0.6415881752431541
+INFO:2021-07-26 15:10:36,543:[metrics.py:481 -        metrics_main() ] counts spearman: 0.6061174586211814
