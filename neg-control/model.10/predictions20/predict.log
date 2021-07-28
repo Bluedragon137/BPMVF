@@ -1,0 +1,21 @@
+INFO:2021-07-26 14:56:37,539:[predict.py:360 -        predict_main() ] INPUT DATA -
+{'task0': {'strand': 0, 'task_id': 0, 'signal': '/wynton/home/corces/allan/BPMVF/neg-control/data/Cluster24.bpnet.unstranded.bw', 'peaks': '/wynton/home/corces/allan/BPMVF/neg-control/data/peaks_df_deduped0.20.bed'}}
+INFO:2021-07-26 14:56:37,540:[predict.py:363 -        predict_main() ] Loading /wynton/home/corces/allan/BPMVF/neg-control/models/bpnet.10_split000.h5
+INFO:2021-07-26 14:56:40,598:[predict.py:85 -             predict() ] SEQGEN Class Name: MBPNetSequenceGenerator
+INFO:2021-07-26 14:56:40,631:[utils.py:145 -   _init_num_threads() ] Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+INFO:2021-07-26 14:56:40,750:[generators.py:447 -            __init__() ] mode 'test': Data size (with 0 padded rows) - 6105
+INFO:2021-07-26 14:56:40,751:[bigwigutils.py:66 -prepare_BPNet_output_files() ] Profile bigWig - /wynton/home/corces/allan/BPMVF/neg-control/model.10/predictions20/bpnet_task0.bw
+INFO:2021-07-26 14:56:40,751:[bigwigutils.py:67 -prepare_BPNet_output_files() ] Counts bigWig - /wynton/home/corces/allan/BPMVF/neg-control/model.10/predictions20/bpnet_task0_exponentiated_counts.bw
+DEBUG:2021-07-26 14:56:40,758:[bigwigutils.py:88 -prepare_BPNet_output_files() ] bigWig HEADER - [('chr1', 248956422)]
+DEBUG:2021-07-26 14:56:40,802:[generators.py:670 -          _epoch_run() ] test spawning process 0, df size (6105, 2), sum(num_batches) 6105
+DEBUG:2021-07-26 14:56:40,817:[generators.py:696 -          _epoch_run() ] test num_batches list [6105]
+DEBUG:2021-07-26 14:56:40,818:[generators.py:708 -          _epoch_run() ] test starting stealer thread 0 [6105] 
+DEBUG:2021-07-26 14:56:40,819:[generators.py:744 -                 gen() ] test Batch generation for epoch 1 started
+DEBUG:2021-07-26 14:57:43,513:[generators.py:592 -        _proc_target() ] test process 0 put 6105 batches into mpq
+DEBUG:2021-07-26 14:57:43,514:[generators.py:615 -            _stealer() ] test stealer thread 0 got 6105 batches from mpq
+DEBUG:2021-07-26 15:10:24,292:[generators.py:756 -                 gen() ] test waiting to join process 0
+DEBUG:2021-07-26 15:10:24,310:[generators.py:761 -                 gen() ] test waiting to join thread 0
+DEBUG:2021-07-26 15:10:24,311:[generators.py:765 -                 gen() ] test join complete for process 0
+DEBUG:2021-07-26 15:10:24,311:[generators.py:768 -                 gen() ] test Finished join for epoch 1
+DEBUG:2021-07-26 15:10:24,312:[generators.py:770 -                 gen() ] test Ready for next epoch
+INFO:2021-07-26 15:10:24,594:[predict.py:306 -             predict() ] Total Elapsed Time: 823.8433163166046 secs
