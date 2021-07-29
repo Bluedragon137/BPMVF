@@ -10,6 +10,7 @@ BPNet-ATAC-seq/*
 scripts/job_output/*
 ATAC/HINT/*
 
+
 ATAC/data/C24signal.bedGraph
 ATAC/data/C24signal.bw
 ATAC/data/Cluster24.bpnet.unstranded.bw
@@ -22,3 +23,6 @@ ATAC/iterations/bpnet256.100.001.01/shap/profile_scores.h5
 ATAC/iterations/bpnet-hint256.100.001/predictions/predicted_profile.bw
 ATAC/iterations/bpnet-hint256.100.001/shap/*
 ATAC/iterations/bpnet256.100.001.01/shap/*
+neg-control/data/Cluster24.bpnet.unstranded.bw
+neg-control/data/negative_ranges.bed
+neg-control/data/ranges.bed

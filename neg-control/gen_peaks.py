@@ -61,7 +61,7 @@ def gen_peaks_main(origpeaks, negpeaks, rate):
     for index, row in origp.iterrows():
         seq = fasta_ref.fetch(row['chrom'], row['st'], row['en'])
         gc = round(get_GC_content(seq))
-        distribution[gc-1] += 1
+        distribution[gc] += 1
     distribution = np.multiply(distribution, rate)
     distribution = distribution.astype(int)
 
