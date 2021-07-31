@@ -9,21 +9,22 @@
 BASE_DIR=/wynton/home/corces/allan/BPMVF/neg-control
 DATA_DIR=$BASE_DIR/data
 MODEL_DIR=$BASE_DIR/models
-
-INPUT_DATA=$BASE_DIR/input_data.json
-CV_SPLITS=$BASE_DIR/splits.json
-
-PEAKS_F=$DATA_DIR/peaks_df_deduped0.20.bed
-INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
-
 REFERENCE_DIR=/wynton/home/corces/allan/BPMVF/reference
 CHROM_SIZES=$REFERENCE_DIR/hg38.chrom.sizes
 REFERENCE_GENOME=$REFERENCE_DIR/hg38.genome.fa
+CV_SPLITS=$BASE_DIR/splits.json
+INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
 
-MODEL_NAME=bpnet.20
+
+#modify between runs:
+INPUT_DATA=$BASE_DIR/parameters/input_data10.json
+
+MODEL_NAME=bpm24.nc10.local
 FILTERS=256
 LEARNING_RATE=0.001
-COUNTS_LOSS_WEIGHT=300.29 #300.28898500099734 for Cluster 24
+
+COUNTS_LOSS_WEIGHT=`counts_loss_weight --input-data $INPUT_DATA`
+printf "COUNTS LOSS WEIGHT: %d" $COUNTS_LOSS_WEIGHT
 
 mkdir -p $MODEL_DIR
 train \

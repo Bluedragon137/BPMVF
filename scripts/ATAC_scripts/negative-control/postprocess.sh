@@ -16,12 +16,16 @@ INPUT_BW=$DATA_DIR/Cluster24.bpnet.unstranded.bw
 
 
 #modify between runs:
-SUB_DIR=$BASE_DIR/model.10
-PREDICTIONS_DIR=$SUB_DIR/predictions20
-BOUNDS_DIR=$SUB_DIR/bounds20
-METRICS_DIR=$SUB_DIR/metrics20
-INPUT_DATA=$BASE_DIR/input_data.json
-PEAKS_F=$DATA_DIR/peaks_df_deduped0.20.bed
+MODEL=$MODEL_DIR/bpm24.nc10.local_split000.h5
+SUB_DIR=$BASE_DIR/m2.10
+PREDICTIONS_DIR=$SUB_DIR/predictions100
+BOUNDS_DIR=$SUB_DIR/bounds100
+METRICS_DIR=$SUB_DIR/metrics100
+INPUT_DATA=$BASE_DIR/parameters/input_data100.json
+PEAKS_F=$DATA_DIR/peaks_df_deduped100.bed
+
+LOGITS_FILE=$PREDICTIONS_DIR/'bpm24_task0.bw'
+COUNTS_FILE=$PREDICTIONS_DIR/'bpm24_task0_exponentiated_counts.bw'
 
 
 INPUT_SEQ_LEN=2114
@@ -29,7 +33,7 @@ OUTPUT_LEN=1000
 
 mkdir -p $PREDICTIONS_DIR
 predict \
-    --model $MODEL_DIR/bpnet.10_split000.h5 \
+    --model $MODEL \
     --chrom-sizes $CHROM_SIZES \
     --chroms chr1 \
     --reference-genome $REFERENCE_GENOME \
@@ -43,8 +47,6 @@ predict \
     --batch-size 1  \
     --predict-peaks
 
-LOGITS_FILE=$PREDICTIONS_DIR/'bpnet_task0.bw'
-COUNTS_FILE=$PREDICTIONS_DIR/'bpnet_task0_exponentiated_counts.bw'
 
 mkdir -p $BOUNDS_DIR
 bounds \
